@@ -85,26 +85,26 @@
                     <li class="tab col-md-6">
                         <a href="#tab-testimonials-1">
                             <!-- Testimonial logo -->
-                            <img src="/assets/images/press-logos/press-3.png" alt="">
+                            <!-- <img src="/assets/images/press-logos/press-3.png" alt=""> -->
                         </a>
 
                     </li>
                     <li class="tab col-md-6">
                         <a href="#tab-testimonials-2">
                             <!-- Testimonial logo -->
-                            <img src="/assets/images/press-logos/press-2.png" alt="">
+                            <!-- <img src="/assets/images/press-logos/press-2.png" alt=""> -->
                         </a>
                     </li>
                     <li class="tab col-md-6">
                         <a href="#tab-testimonials-3">
                             <!-- Testimonial logo -->
-                            <img src="/assets/images/press-logos/press-1.png" alt="">
+                            <!-- <img src="/assets/images/press-logos/press-1.png" alt=""> -->
                         </a>
                     </li>
                     <li class="tab col-md-6">
                         <a href="#tab-testimonials-4">
                             <!-- Testimonial logo -->
-                            <img src="/assets/images/press-logos/press-4.png" alt="">
+                            <!-- <img src="/assets/images/press-logos/press-4.png" alt=""> -->
                         </a>
                     </li>
                 </ul>

@@ -43,7 +43,7 @@ body {
     color: #727272;
     font-size: 16px;
     line-height: 28px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 0;
     background-color: #ffffff;
 }
@@ -128,7 +128,7 @@ ul {
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#80000000', endColorstr='#80000000');
     background: transparent;
     /* background: rgba(51, 51, 51, 0.5); */
-    background:#002D62;
+    /* background:#002D62; */
 }
 
 /* set filter as none for IE9+, because IE9+ support RGBa */
@@ -362,7 +362,7 @@ h1, h2, h3, h4 {
  	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
  	margin: 0 0 20px;
     color: #3e3e3e;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
 }
 
 h1 {
@@ -419,6 +419,11 @@ p {
 
 .text-white {
     color: #ffffff;
+    font-weight:800;
+}
+
+.text-white-feature{
+    text-align: justify;
 }
 
 
@@ -530,7 +535,7 @@ p {
 /*   Header Background Parallax Settings
 /*------------------------------------------*/
 .header{
-    background: url("../images/hero-placeholder.jpg") no-repeat center top fixed;
+    background: url("../images/hero-images/hero-placeholder-underwater.jpg") no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size:cover;
     background-size: cover;
@@ -561,7 +566,8 @@ p {
 
 .navbar-fixed-top.is-scrolling{
     background: #002D62;
-    background: rgba(0, 45, 98,0.95);
+    /* background: rgba(0, 45, 98,0.95); */
+    background:rgba(20, 26, 54, 0.95);
     border: 0;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -925,45 +931,45 @@ p {
 /* ==========================================================================
    08. FEATURES TAB
 ========================================================================== */ 
-.tab-features .features-title{
+.tab-features .features-title {
     padding-top: 120px;
     text-align: center;
 }
 
-.tab-features .large{
+.tab-features .large {
     margin-bottom: 90px;
 }
 
-.tab-features .panel-container{
+.tab-features .panel-container {
     background-color: #ffffff;
 }
 
-.tab-features .etabs{
+.tab-features .etabs {
     display: table;
     text-align: center;
     margin: 0 auto;
 }
 
-.tab-features .etabs .tab{
+.tab-features .etabs .tab {
     display: table-cell;
     padding: 0 70px 50px 0;
     opacity: 0.5;
 }
 
-.tab-features .etabs .tab:last-child{
+.tab-features .etabs .tab:last-child {
     padding-right: 0;
 }
 
-.tab-features .etabs .tab.active{
+.tab-features .etabs .tab.active {
     opacity: 1;
 }
 
-.tab-features .etabs .tab.active:before{
+.tab-features .etabs .tab.active:before {
     content: '';
     position: relative;
     bottom: -141px;
     margin-left: 48px;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     content: " ";
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -976,8 +982,8 @@ p {
 
 .etabs .icon-sm {
     display: inline-block;
-    width:55px;
-    height:auto;
+    width: 55px;
+    height: auto;
     margin-right: 10px;
     vertical-align: sub;
     color: #ffffff;
@@ -991,18 +997,38 @@ p {
     color: #ffffff;
 }
 
+.tab-content-wrapper {
+    background-color: black;
+    padding: 50px 0; /* Adjust padding to create space */
+}
+
+.tab-content {
+    display: flex;
+    align-items: center;
+    height: 100vh; /* Ensure the tab content takes the full height of the viewport */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
 .tab-features .tab-content {
-    overflow:hidden !important;
+    overflow: hidden !important;
     height: 700px;
     padding-top: 100px;
 }
 
 .tab-content h4 {
-    font-size: 24px;
+    font-size: 40px;
     line-height: 30px;
+    text-align: center;
 }
 
-.tab-content p{
+.tab-content p {
+    font-size: 32px;
+    line-height: 30px;
+    text-align: right;
     margin-bottom: 20px;
 }
 
@@ -1010,13 +1036,13 @@ p {
     margin-bottom: 20px;
 }
 
-.tab-icon .icon-sm{
+.tab-icon .icon-sm {
     width: 60px;
     margin-bottom: 10px;
     display: inline-block;
 }
 
-.tab-icon .large{
+.tab-icon .large {
     margin-bottom: 10px;
     display: inline-block;
     color: #3e3e3e;
@@ -1025,17 +1051,120 @@ p {
     bottom: 10px;
 }
 
-.img-device{
+.img-device {
     width: 100%;
 }
 
 /*single feature-tab fixes*/
 /* 2col text left with buttons, image right */
-#tab-feature-1 .btn-box{
+#tab-feature-1 .btn-box {
     padding: 0;
 }
 
-/* New Feature Tabs */
+#tab-feature-1 {
+    background-image: url('/assets/images/features/usrr_interact_images.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #ffffff;
+}
+#tab-feature-1 .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#tab-feature-1 .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#tab-feature-1 .text-container {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 50px; /* Adjust as necessary */
+    margin-left: 0; /* Align to the far left */
+}
+
+#tab-feature-1 p {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+#tab-feature-2 {
+    background-image: url('/assets/images/features/representation-user-experience-interface-design.jpg');
+}
+
+#tab-feature-3 {
+    background-image: url('/assets/images/features/padlock_edited_image.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #ffffff;
+}
+
+#tab-feature-3 .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#tab-feature-3 .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#tab-feature-3 .text-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 50px; /* Adjust as necessary */
+    margin-left: 0; /* Align to the far left */
+}
+
+#tab-feature-3 p {
+    font-size: 32px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+#tab-feature-4 {
+    background-image: url('/assets/dashboard-mockup.png');
+}
+
+#tab-feature-4 {
+    background-image: url('/assets/dashboard-mockup.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #ffffff;
+}
+
+#tab-feature-4 .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#tab-feature-4 .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#tab-feature-4 .text-container {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 50px; 
+    margin-left: 0;
+}
+
+#tab-feature-4 p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+
 .tab-features .etabs .tab:nth-child(6),
 .tab-features .etabs .tab:nth-child(7),
 .tab-features .etabs .tab:nth-child(8),
@@ -1076,6 +1205,7 @@ p {
 .tab-features .etabs .tab:nth-child(10) .active i {
     color: black;
 }
+
 
 
 /* ==================================================================================
@@ -1665,6 +1795,13 @@ p {
 /* ==========================================================================
    14. FOOTER
 ========================================================================== */ 
+/* .footer{
+    height:10vh;
+} */
+
+/* .footer, .container{
+
+} */
 .footer, .footer a{
     color: #ced3d8;
 }

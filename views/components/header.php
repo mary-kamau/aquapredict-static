@@ -17,7 +17,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- FAVICON  -->
-    <link rel="icon" href="/assets/images/favicon/favicon.ico">
+    <!-- <link rel="icon" href="/assets/images/favicon/favicon.ico"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <!-- =========================
        STYLESHEETS 
     ============================== -->
@@ -150,8 +157,8 @@
                             <!-- Modal-Body Content -->
                             <div class="modal-body">
                                 <div class="box">
-                                    <iframe src="https://aquapredict-frontend.onrender.com/login" frameborder="0" width="100%"
-                                        height="500"></iframe>
+                                    <iframe src="https://aquapredict-frontend.onrender.com/login" frameborder="0"
+                                        width="100%" height="500"></iframe>
                                 </div><!-- /End Login Form Box -->
                             </div><!-- /End Modal-Body -->
 
@@ -204,8 +211,8 @@
 
                                 <div class="box">
                                     <!-- Signup Form -->
-                                    <iframe src="https://aquapredict-frontend.onrender.com/signup" frameborder="0" width="100%"
-                                        height="500"></iframe>
+                                    <iframe src="https://aquapredict-frontend.onrender.com/signup" frameborder="0"
+                                        width="100%" height="500"></iframe>
                                 </div><!-- /End Signup Form Box -->
                             </div><!-- /End Modal-Body -->
                             <!-- Modal-Footer -->
@@ -231,18 +238,18 @@
                                 <!-- Learn More & Video Buttons -->
                                 <div class="btn-box">
                                     <a href="#about" class="btn btn-ghost scrollto">Learn More</a>
-                                    <a href="#mobile-download" class="btn btn-color scrollto"><i
-                                            class="icon icon_cloud-download_alt"></i>Download the App</a>
+                                    <!-- <a href="#mobile-download" class="btn btn-color scrollto"><i
+                                            class="icon icon_cloud-download_alt"></i>Download the App</a> -->
                                 </div>
 
                             </div><!-- /End Intro-Section -->
                         </div><!-- /End Col -->
                         <!-- App Showcase Image -->
-                        <div class="col-sm-6 hidden-xs">
+                        <!-- <div class="col-sm-6 hidden-xs">
                             <div class="app-box">
                                 <img src="/assets/images/devices.png" alt="" class="img-responsive">
                             </div>
-                        </div>
+                        </div> -->
 
                     </div><!-- /End Row -->
                 </div><!-- /End Container Hero-Section -->
@@ -283,7 +290,8 @@
                     <div class="row">
                         <form id="signup-divider" role="form">
                             <a class="btn btn-color" data-toggle="modal" href="javascript:void(0)"
-                                onclick="window.location.href='https://aquapredict-frontend.onrender.com/signup';">Join Today!</a>
+                                onclick="window.location.href='https://aquapredict-frontend.onrender.com/signup';">Join
+                                Today!</a>
                         </form>
                     </div>
                 </div>

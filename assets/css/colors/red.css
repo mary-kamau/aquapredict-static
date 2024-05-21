@@ -1,14 +1,14 @@
 /* ==========================================================================
-   COLOR: RED #002D62 - #cb6060
+   COLOR: RED rgba(20, 26, 54, 0.95) - #cb6060
 ========================================================================== */ 
 a, .text-color {
- 	color: #002D62;
+ 	color: rgba(20, 26, 54, 0.95);
 }
 
 /*  */
 
 .color-bg {
-    background-color: #002D62;
+    background-color: rgba(20, 26, 54, 0.95);
 }
 
 /*------------------------------------------*/
@@ -16,35 +16,35 @@ a, .text-color {
 /*------------------------------------------*/
 .btn-color-ghost {
 	background: transparent;
-	color: #002D62;
-	border-color: #002D62;
+	color: rgba(20, 26, 54, 0.95);
+	border-color: rgba(20, 26, 54, 0.95);
 }
 
 .btn-color, .btn-color-ghost:hover {
-	background: #002D62;
+	background: rgba(20, 26, 54, 0.95);
 	color: #fff;
-	border-color: #002D62;
+	border-color: rgba(20, 26, 54, 0.95);
 }
 
 .btn-color:hover {
 	background: #ffffff;
-	color: #002D62;
-	border-color: #002D62;
+	color: rgba(20, 26, 54, 0.95);
+	border-color: rgba(20, 26, 54, 0.95);
 }
 
 .btn-white {
-    color: #002D62;
+    color: rgba(20, 26, 54, 0.95);
 }
 
 .navbar-nav>li>a.btn-signup {
-    background: #002D62;
+    background: rgba(20, 26, 54, 0.95);
     color: #ffffff;
-    border-color: #002D62;
+    border-color: rgba(20, 26, 54, 0.95);
 }
 
 .navbar-nav>li>a.btn-signup:hover, .navbar-nav>li>a.btn-signup:focus {
     background: #ffffff;
-    color: #002D62;
+    color: rgba(20, 26, 54, 0.95);
     border-color: #ffffff;
 }
 
@@ -53,18 +53,18 @@ a, .text-color {
 /*------------------------------------------*/
 .solid-bg{
     background:none;
-    background-color: #002D62;
+    background-color: rgba(20, 26, 54, 0.95);
 }
 
 .navbar-nav>li>a.btn-white{
-    color: #002D62;
+    color: rgba(20, 26, 54, 0.95);
 }
 
 /*------------------------------------------*/
 /*   Header App
 /*------------------------------------------*/
 .type .hero-section span{
-    background-color: #002D62;
+    background-color: rgba(20, 26, 54, 0.95);
 }
 
 /*------------------------------------------*/
@@ -78,21 +78,21 @@ a, .text-color {
 /*	 Icons
 /*------------------------------------------*/
 .icon-lg:hover, .icon-lg:focus, .icon-sm:hover, .icon-sm:focus {
-    color:#002D62;
+    color:rgba(20, 26, 54, 0.95);
 }
 
 /*------------------------------------------*/
 /*	 Preloader
 /*------------------------------------------*/
 .preloader{
-	background-color: #002D62;
+	background-color: rgba(20, 26, 54, 0.95);
 }
 
 /*------------------------------------------*/
 /*   Navbar Links Menu
 /*------------------------------------------*/
 .is-scrolling .navbar-nav>.active>a, .is-scrolling .navbar-nav>.active>a:hover, .is-scrolling .navbar-nav>.active>a:focus {
-    color: #002D62;
+    color: rgba(20, 26, 54, 0.95);
     background-color: transparent;
 }
 
@@ -101,7 +101,7 @@ a, .text-color {
 /*------------------------------------------*/
 .login .modal-header .modal-title span{
     font-weight: 400;
-    color: #002D62;
+    color: rgba(20, 26, 54, 0.95);
 }
 
 /*------------------------------------------*/
@@ -116,26 +116,26 @@ a, .text-color {
 }
 
 .pricing-tab .ribbon .popular{
-    background-color: #002D62;
+    background-color: rgba(20, 26, 54, 0.95);
 }
 
 /*------------------------------------------*/
 /*   Team
 /*------------------------------------------*/
 .team-img .img-icons span i:hover{
-    color: #002D62;
+    color: rgba(20, 26, 54, 0.95);
 }
 
 /*------------------------------------------*/
 /*   Signup-Divider & Fast-Reg
 /*------------------------------------------*/
 .signup-divider .form-control:focus{
-    border-color: #002D62;
+    border-color: rgba(20, 26, 54, 0.95);
 }
 
 .fast-reg .form-control:focus{
-    background-color: #002D62;
-    border-color: #002D62;
+    background-color: rgba(20, 26, 54, 0.95);
+    border-color: rgba(20, 26, 54, 0.95);
     box-shadow: none;
 }
 
@@ -143,7 +143,7 @@ a, .text-color {
 /*   Footer
 /*------------------------------------------*/
 .footer a:hover{
-    color: #002D62;
+    color: rgba(20, 26, 54, 0.95);
 }
 
 
