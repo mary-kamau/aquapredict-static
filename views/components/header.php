@@ -29,6 +29,12 @@
        STYLESHEETS 
     ============================== -->
 
+    <!-- Slick CSS -->
+    <!-- <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" /> -->
+
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="/assets/css/plugins/bootstrap.min.css">
 
@@ -263,8 +269,68 @@
         <!-- ==================================================
             FEATURES SECTION
         ======================================================= -->
-
         <?php include (__DIR__ . '/../pages/features.php'); ?>
+
+        <!-- <section class="features-section">
+            <div class="section-header">
+                <span class="small-heading">service <span class="highlight">it solutions</span></span>
+                <h2 class="section-title">All Professional <span class="highlight">IT Solutions</span> & Services</h2>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="feature-card"
+                            data-description="UNLOCK VALUABLE INSIGHTS WITH OUR AI-DRIVEN ANALYSIS,
+                                    PROVIDING YOU WITH INTELLIGENT RECOMMENDATIONS TO ENHANCE YOUR STRATEGY."
+                            data-bg="url('/assets/images/features/usrr_interact_images.png')">
+                            <div class="card-icon">A</div>
+                            <h3>AI-Driven Insights</h3>
+                            <a href="#" class="card-link">Read Out More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="feature-card" data-title="Voice Over Internet Protocol"
+                            data-description="Details about Voice Over Internet Protocol"
+                            data-bg="url('images/voip.jpg')">
+                            <div class="card-icon">V</div>
+                            <h3>Voice Over Internet Protocol</h3>
+                            <a href="#" class="card-link">Read Out More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="feature-card" data-title="Clouds Backup Services"
+                            data-description="Details about Clouds Backup Services"
+                            data-bg="url('images/cloud-backup.jpg')">
+                            <div class="card-icon">C</div>
+                            <h3>Clouds Backup Services</h3>
+                            <a href="#" class="card-link">Read Out More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="feature-card" data-title="Mobile and Remote Networking"
+                            data-description="Details about Mobile and Remote Networking"
+                            data-bg="url('images/mobile-networking.jpg')">
+                            <div class="card-icon">M</div>
+                            <h3>Mobile and Remote Networking</h3>
+                            <a href="#" class="card-link">Read Out More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="feature-card" data-title="Data Backup and Restoration"
+                            data-description="Details about Data Backup and Restoration"
+                            data-bg="url('images/data-backup.jpg')">
+                            <div class="card-icon">D</div>
+                            <h3>Data Backup and Restoration</h3>
+                            <a href="#" class="card-link">Read Out More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="details-section" id="details-section">
+            <p id="details-description"></p>
+        </section> -->
         <!-- =============================
              /END FEATURES TAB
         ============================== -->
@@ -315,7 +381,56 @@
         <!-- =======================================================
              TESTIMONIALS WITH PRESS/CLIENTS LOGOS
         ============================================================ -->
-        <?php include (__DIR__ . '/../pages/testimonials.php'); ?>
+        <section class="testimonial-section">
+            <h2 class="section-title">Transforming Real Lives. Discover Our User Testimonials.</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="quote">AquaPredict revolutionised my coaching approach.The accuracy in predicting my
+                            swimmers' progress is truly remarkable.</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/assets/images/testimonials/pexels-andrea-piacquadio-948873.jpg" alt="Olivia Smith">
+                        <div class="author-info">
+                            <p class="author-name">Olivia Smith</p>
+                            <p class="author-title">London, UK</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="quote">As a professional swimmer, AquaPredict's insights have been invaluable.It's
+                            like
+                            having a futuristic coach!</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/assets/images/testimonials/pexels-kindel-media-8688525.jpg" alt="Cameron Williamson">
+                        <div class="author-info">
+                            <p class="author-name">Ethan Taylor</p>
+                            <p class="author-title">Manchester, UK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="quote">I was sceptical at first, but AquaPredict's precise forecasts have improved my
+                            training efficiency incredibly.</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/assets/images/testimonials/pexels-tima-miroshnichenko-6012262.jpg"
+                            alt="Leslie Alexander">
+                        <div class="author-info">
+                            <p class="author-name">Amelia Johnson</p>
+                            <p class="author-title">Edinburgh, Scotland</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- =============================
              /END TESTIMONIALS
         ============================== -->
@@ -324,109 +439,6 @@
         <!-- ==================================================
             TEAM
         ======================================================= -->
-        <!-- <section class="team" id="team">
-            <div class="container">
-                <div class="wrapper-lg">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>Meet the Team</h2>
-                            <p class="large">We are a passionate team of designers, developers and marketing experts
-                                with headquarters in Melbourne.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                   
-                        <div class="col-sm-4 team-box">
-                            <div class="team-img">
-                                <img src="/assets/images/team-placeholder.jpg" class="img-responsive" alt="">
-                                <div class="img-overlay">
-                                    <div class="img-icons">
-                                        <span class="icon-white">
-                                            <a href="#">
-                                                <i class="icon icon-facebook"></i>
-                                            </a>
-                                        </span>
-                                        <span class="icon-white">
-                                            <a href="#">
-                                                <i class="icon icon-twitter"></i>
-                                            </a>
-                                        </span>
-                                        <span class="icon-white">
-                                            <a href="#">
-                                                <i class="icon icon-linkedin"></i>
-                                            </a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>Lukas Mayr</h4>
-                            <p class="team-bio"><span class="text-color">Lead designer</span> with experience in most
-                                things visual. He loves trying out new techniques and finding the perfect solution for
-                                any kind of requirements.</p>
-                        </div>
-                 
-                        <div class="col-sm-4 team-box">
-                            <div class="team-img">
-                                <img src="/assets/images/team-placeholder.jpg" class="img-responsive" alt="">
-                                <div class="img-overlay">
-                                    <div class="img-icons">
-                                        <span class="icon-white">
-                                            <a href="#">
-                                                <i class="icon icon-facebook"></i>
-                                            </a>
-                                        </span>
-                                        <span class="icon-white">
-                                            <a href="#">
-                                                <i class="icon icon-twitter"></i>
-                                            </a>
-                                        </span>
-                                        <span class="icon-white">
-                                            <a href="#">
-                                                <i class="icon icon-linkedin"></i>
-                                            </a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>Isabella Knudsen</h4>
-                            <p class="team-bio"><span class="text-color">Director of Growth and Customer
-                                    Acquisition</span>. She enjoys the finer details of a project, considering every
-                                stage of its journey from planning to completion.</p>
-                        </div>
-                 
-                        <div class="col-sm-4 team-box">
-                            <div class="team-img">
-                                <img src="/assets/images/team-placeholder.jpg" class="img-responsive" alt="">
-                                <div class="img-overlay">
-                                    <div class="img-icons">
-                                        <span class="icon-white">
-                                            <a href="#">
-                                                <i class="icon icon-facebook"></i>
-                                            </a>
-                                        </span>
-                                        <span class="icon-white">
-                                            <a href="#">
-                                                <i class="icon icon-twitter"></i>
-                                            </a>
-                                        </span>
-                                        <span class="icon-white">
-                                            <a href="#">
-                                                <i class="icon icon-linkedin"></i>
-                                            </a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>Adrien Simon</h4>
-                            <p class="team-bio"><span class="text-color">Full stack hacker, product design, backend
-                                    development, user interface and everything in between.</span> He likes to keep
-                                things simple and focus on the little details.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </section> -->
         <!-- =============================
              /END TEAM SECTION 
         ============================== -->
@@ -435,64 +447,6 @@
         <!-- ==================================================
             MOBILE DOWNLOAD SECTION
         ======================================================= -->
-        <!-- <section class="mobile-download light-bg" id="mobile-download">
-            <div class="container">
-                <div class="wrapper-lg">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>Download the App</h2>
-                            <p class="large">Don't miss the chance to get our amazing Mobile Application. Get connected
-                                anytime.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4">
-                            <h3>Supercharge your Productivity</h3>
-                            <p class="mobile-text">With an online dashboard and a mobile app, you'll have full control
-                                of your account and see your usage in real-time. <span class="text-color">Even more
-                                    convenient!</span></p>
-                            <a href="#" class="btn btn-color"><i class="icon icon_cloud-download_alt"></i>Download
-                                Now!!</a>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4">
-                            <div class="shot-container">
-                                <div id="owl-carousel-shots-phone" class="owl-carousel">
-                                    <div class="owl-container text-center shots-modal">
-                                        <img src="/assets/images/app-screenshots/app-screenshot1alt.jpg" alt=""
-                                            title="this is the title" />
-                                    </div>
-                                    <div class="owl-container text-center shots-modal">
-                                        <img src="/assets/images/app-screenshots/app-screenshot2alt.jpg" alt=""
-                                            title="this is the title" />
-                                    </div>
-                                    <div class="owl-container text-center shots-modal">
-                                        <img src="/assets/images/app-screenshots/app-screenshot3alt.jpg" alt=""
-                                            title="this is the title" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md-4 right-features">
-                            
-                            <div class="col-sm-4 col-md-12">
-                                <h4>Get Notified</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam inventore.</p>
-                            </div>
-                            <div class="col-sm-4 col-md-12">
-                                <h4>Add Data in Seconds</h4>
-                                <p>Magnam beatae similique molestias incidunt, assumenda dolorem ea deserunt.</p>
-                            </div>
-                            <div class="col-sm-4 col-md-12">
-                                <h4>Real Time Alerts</h4>
-                                <p>Accusantium at sapiente mollitia asperiores quisquam rerum hic et animi.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <!-- =============================
              /END MOBILE DOWNLOAD SECTION 
         ============================== -->
@@ -510,65 +464,73 @@
             FOOTER
         ======================================================= -->
         <footer class="footer dark-bg" id="footer">
-            <div class="container">
-                <div class="wrapper-lg">
-                    <div class="row">
-                        <!-- Footer Left Col -->
-                        <div class="col-md-5">
-                            <!-- Logo -->
-                            <a href="#top" class="scrollto" title="AquaPredict">
-                                <span class="text-logo">AquaPredict</span>
-                            </a>
-                        </div>
-                        <!-- Footer Contact Col -->
-                        <?php include (__DIR__ . '/../pages/contacts.php'); ?>
-                        <!-- Footer Right Col: Twitter Feed -->
-                        <!-- <div class="col-md-4">
-                            <h5 class="text-white">Recent Tweets</h5>
-                            <div class="tweet"></div>
-                        </div> -->
+            <div class="footer-item">
+                <span class="text-logo">About Us</span>
+                <p>Navigate through AquaPredict's offerings with our footer links,
+                    including detailed insights into our
+                    technology, user testimonials,
+                    and how to get started on improving your performance.</p>
+            </div>
 
-                        <!-- Footer Menu and Copy -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <ul class="footer-nav">
-                                    <li>
-                                        <a href="#">About</a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-footer-link"
-                                            href="https://docs.google.com/document/d/1ZUXlvDDxSxG72DLxE5DOzaOjkBtKMGUjelDGKQYbspE/edit#heading=h.bwy8qj1gw37k"
-                                            target="_blank">Terms and Conditions</a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-footer-link"
-                                            href="https://docs.google.com/document/d/1HnWm8PhkhBTKqwZs35NnZr7Nv-jWBweHwBrcDavikgU/edit"
-                                            target="_blank">Privacy Notice</a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-footer-link"
-                                            href="https://docs.google.com/document/d/1bK1aEQA_hVMCwSsayDxwn-NIyc_RpteXgHXYz7naYbw/edit"
-                                            target="_blank">Acceptable Use Notice</a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-footer-link"
-                                            href="https://docs.google.com/document/d/1IuE6sNsyePEW-V7OROyv2s1NTsHIfJ_CPNCO2E-UM9E/edit"
-                                            target="_blank">Cookies Policy</a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-footer-link"
-                                            href="https://docs.google.com/document/d/12VHKwDCkwcE9lRe6ZvjptnsH8dv1k6gO-GYE9Elu5Cw/edit"
-                                            target="_blank">Accessibility</a>
-                                    </li>
-                                </ul>
-                                <!-- <p class="footer-copy">&copy; 2014-16 - SmartMvp. Original Design by <a
-                                        href="http://themedept.com">ThemeDept.</a></p> -->
-                            </div>
-                        </div>
+            <div class="footer-item">
+                <span class="text-logo">Contact</span>
+                <ul>
+                    <li class="mt-3">
+                        <a href="mailto:hello@aquapredict.co.uk">hello@aquapredict.co.uk</a>
+                    </li>
+                    <li>
+                        Unit 4, Durham Workspace,
+                    </li>
+                    <li>Abbey Road, Durham DH1 5JZ</li>
+                    <li>
+                        0044(0)3331886566
+                    </li>
+                    <li>
+                        <a href="https://aquapredict.co.uk" class="contact-link">https://aquapredict.co.uk</a>
+                    </li>
+                    <li>
+                        Ⓒ AquaPredict Ltd
+                    </li>
+                </ul>
+            </div>
 
-                    </div><!-- End Row -->
-                </div><!-- /End Wrapper -->
-            </div><!-- /End Container -->
+            <div class="footer-item">
+                <span class="text-logo">Links</span>
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-footer-link"
+                            href="https://docs.google.com/document/d/1ZUXlvDDxSxG72DLxE5DOzaOjkBtKMGUjelDGKQYbspE/edit#heading=h.bwy8qj1gw37k"
+                            target="_blank">Terms and Conditions</a>
+                    </li>
+                    <li>
+                        <a class="nav-footer-link"
+                            href="https://docs.google.com/document/d/1HnWm8PhkhBTKqwZs35NnZr7Nv-jWBweHwBrcDavikgU/edit"
+                            target="_blank">Privacy Notice</a>
+                    </li>
+                    <li>
+                        <a class="nav-footer-link"
+                            href="https://docs.google.com/document/d/1bK1aEQA_hVMCwSsayDxwn-NIyc_RpteXgHXYz7naYbw/edit"
+                            target="_blank">Acceptable Use Notice</a>
+                    </li>
+                    <li>
+                        <a class="nav-footer-link"
+                            href="https://docs.google.com/document/d/1IuE6sNsyePEW-V7OROyv2s1NTsHIfJ_CPNCO2E-UM9E/edit"
+                            target="_blank">Cookies Policy</a>
+                    </li>
+                    <li>
+                        <a class="nav-footer-link"
+                            href="https://docs.google.com/document/d/12VHKwDCkwcE9lRe6ZvjptnsH8dv1k6gO-GYE9Elu5Cw/edit"
+                            target="_blank">Accessibility</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <span class="text-logo">Newsletter</span>
+            </div>
         </footer>
 
     </div>
@@ -582,6 +544,8 @@
     <script src="/assets/js/plugins/modernizr.custom.min.js"></script>
     <script src="/assets/js/plugins/plugins.min.js"></script>
     <script src="/assets/js/plugins/twitter/tweetie.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+    </script>
     <!-- Custom Script -->
     <script src="/assets/js/custom.js"></script>
 

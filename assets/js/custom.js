@@ -177,11 +177,14 @@ $(function(){
 /* ==========================================
     EASY TABS
 ============================================= */
-$('.tabs.testimonials').easytabs({
-    animationSpeed: 300,
-    updateHash: false,
-    cycle: 10000
-});
+// $('.tabs.testimonials').easytabs({
+//     animationSpeed: 300,
+//     updateHash: false,
+//     cycle: 10000
+// });
+
+// Initialize Slick Carousel
+
 
 $('.tabs.features').easytabs({
     animationSpeed: 300,
