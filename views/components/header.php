@@ -266,8 +266,8 @@
 
         <section class="it-industries-section">
             <div class="section-header">
-                <span class="small-heading">best it service</span>
-                <h2 class="section-title">It Industries We're Offering</h2>
+                <!-- <span class="small-heading">best it service</span> -->
+                <!-- <h2 class="section-title">It Industries We're Offering</h2> -->
             </div>
             <div class="industries-container">
                 <div class="industry-card">
