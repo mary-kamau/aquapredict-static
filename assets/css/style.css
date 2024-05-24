@@ -127,8 +127,8 @@ ul {
     zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#80000000', endColorstr='#80000000');
     background: transparent;
-    /* background: rgba(51, 51, 51, 0.5); */
-    /* background:#002D62; */
+    background: rgba(51, 51, 51, 0.5);
+    /* background:#002D62;*/
 }
 
 /* set filter as none for IE9+, because IE9+ support RGBa */
@@ -740,6 +740,103 @@ p {
 }
 
 
+/*------------------------------------------*/
+/*   About
+/*------------------------------------------*/
+
+.it-industries-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-header .small-heading {
+    font-size: 1.2em;
+    color: #6c63ff;
+    text-transform: uppercase;
+}
+
+.section-header .section-title {
+    font-size: 2.5em;
+    color: #333;
+    margin: 10px 0;
+    position: relative;
+}
+
+.section-header .section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #6c63ff;
+    margin: 10px auto;
+}
+
+.industries-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.industry-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.industry-card .card-icon {
+    font-size: 3em;
+    color: #6c63ff;
+    margin-bottom: 20px;
+}
+
+.industry-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.industry-card p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.industry-card .card-link {
+    display: inline-block;
+    color: #6c63ff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.industry-card .card-link:hover {
+    color: #333;
+}
+
+.contact-info {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.contact-info a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
 
 /* ==========================================================================
    05. LOGIN/SIGNUP MODAL
@@ -892,6 +989,78 @@ p {
     -moz-background-size: cover;
     background-size: cover;
 }
+    /*------------------------------------------*/
+    /*   Testimonial
+    /*------------------------------------------*/
+    .section-title {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    
+    .section-title .highlight {
+        color: #00bcd4;
+    }
+
+    .testimonial-section {
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    
+    .testimonials-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1em;
+    }
+    
+    .testimonial {
+        background: #fff;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .testimonial-content .quote {
+        font-size: 1em;
+        color: #666;
+        margin-bottom: 1em;
+    }
+    
+    .rating {
+        font-size: 1.5em;
+        color: #f39c12; /* Star color */
+    }
+    
+    .testimonial-author {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+    
+    .testimonial-author img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 0.5em;
+    }
+    
+    .author-info {
+        text-align: center;
+    }
+    
+    .author-name {
+        font-weight: bold;
+    }
+    
+    .author-title {
+        color: #00bcd4;
+    }
+
 
 
 /* ==========================================================================
@@ -900,7 +1069,7 @@ p {
 /*------------------------------------------*/
 /*   Testimonial-Press Section
 /*------------------------------------------*/
-.testimonial-press {
+/* .testimonial-press {
     height: 600px;
 }
 
@@ -925,288 +1094,152 @@ p {
 
 .testimonial-press .etabs .active img {
     opacity: 1;
-}
+} */
 
 
 /* ==========================================================================
    08. FEATURES TAB
 ========================================================================== */ 
-.tab-features .features-title {
-    padding-top: 120px;
+.it-solutions-section {
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
     text-align: center;
 }
 
-.tab-features .large {
-    margin-bottom: 90px;
+.section-header {
+    margin-bottom: 20px;
 }
 
-.tab-features .panel-container {
-    background-color: #ffffff;
+.small-heading {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
 }
 
-.tab-features .etabs {
-    display: table;
-    text-align: center;
+.highlight {
+    color: #00bcd4;
+}
+
+.section-title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.carousel-container {
+    overflow: hidden;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.tab-features .etabs .tab {
-    display: table-cell;
-    padding: 0 70px 50px 0;
-    opacity: 0.5;
-}
-
-.tab-features .etabs .tab:last-child {
-    padding-right: 0;
-}
-
-.tab-features .etabs .tab.active {
-    opacity: 1;
-}
-
-.tab-features .etabs .tab.active:before {
-    content: '';
-    position: relative;
-    bottom: -141px;
-    margin-left: 48px;
-    /* vertical-align: middle; */
-    content: " ";
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 12px solid #f9f9fa;
-    border-style: none double solid;
-    width: 0;
-    height: 0;
-    display: block;
-}
-
-.etabs .icon-sm {
-    display: inline-block;
-    width: 55px;
-    height: auto;
-    margin-right: 10px;
-    vertical-align: sub;
-    color: #ffffff;
-}
-
-.etabs .icon-sm:hover {
-    color: #ffffff;
-}
-
-.tab-features .etabs .active h5, .tab-features .etabs .active i {
-    color: #ffffff;
-}
-
-.tab-content-wrapper {
-    background-color: black;
-    padding: 50px 0; /* Adjust padding to create space */
-}
-
-.tab-content {
+.carousel {
     display: flex;
+    transition: transform 1s ease;
+}
+
+.carousel-item {
+    min-width: calc(100% / 5);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100vh; /* Ensure the tab content takes the full height of the viewport */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
-.tab-features .tab-content {
-    overflow: hidden !important;
-    height: 700px;
-    padding-top: 100px;
+.it-solution-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
-.tab-content h4 {
-    font-size: 40px;
-    line-height: 30px;
+.card-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #00bcd4;
+    background: rgba(0, 188, 212, 0.1);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card-icon-img img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.card-link {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+#details-section-container {
+    display: none; /* Initially hidden */
+}
+
+.details-section {
+    height: 60vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     text-align: center;
 }
 
-.tab-content p {
-    font-size: 32px;
-    line-height: 30px;
-    text-align: right;
-    margin-bottom: 20px;
-}
-
-.tab-icon {
-    margin-bottom: 20px;
-}
-
-.tab-icon .icon-sm {
-    width: 60px;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.tab-icon .large {
-    margin-bottom: 10px;
-    display: inline-block;
-    color: #3e3e3e;
-    font-size: 20px;
-    position: relative;
-    bottom: 10px;
-}
-
-.img-device {
+.details-content {
+    display: flex;
+    align-items: center;
     width: 100%;
-}
-
-/*single feature-tab fixes*/
-/* 2col text left with buttons, image right */
-#tab-feature-1 .btn-box {
-    padding: 0;
-}
-
-#tab-feature-1 {
-    background-image: url('/assets/images/features/usrr_interact_images.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: #ffffff;
-}
-#tab-feature-1 .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-#tab-feature-1 .row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#tab-feature-1 .text-container {
+    max-width: 1200px;
     padding: 20px;
-    border-radius: 8px;
-    margin-top: 50px; /* Adjust as necessary */
-    margin-left: 0; /* Align to the far left */
+    box-sizing: border-box;
 }
 
-#tab-feature-1 p {
-    font-size: 32px;
-    line-height: 1;
-    margin-bottom: 20px;
+.details-section.odd .details-content {
+    flex-direction: row-reverse;
 }
 
-#tab-feature-2 {
-    background-image: url('/assets/images/features/representation-user-experience-interface-design.jpg');
-}
-
-#tab-feature-3 {
-    background-image: url('/assets/images/features/padlock_edited_image.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: #ffffff;
-}
-
-#tab-feature-3 .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-#tab-feature-3 .row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#tab-feature-3 .text-container {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+.details-text {
+    flex: 1;
     padding: 20px;
-    border-radius: 8px;
-    margin-top: 50px; /* Adjust as necessary */
-    margin-left: 0; /* Align to the far left */
 }
 
-#tab-feature-3 p {
-    font-size: 32px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+.details-image {
+    flex: 1;
+    max-width: 100%;
+    padding: 50px;
 }
 
-
-#tab-feature-4 {
-    background-image: url('/assets/dashboard-mockup.png');
-}
-
-#tab-feature-4 {
-    background-image: url('/assets/dashboard-mockup.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: #ffffff;
-}
-
-#tab-feature-4 .container {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-#tab-feature-4 .row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#tab-feature-4 .text-container {
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 50px; 
-    margin-left: 0;
-}
-
-#tab-feature-4 p {
-    font-size: 24px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-
-
-.tab-features .etabs .tab:nth-child(6),
-.tab-features .etabs .tab:nth-child(7),
-.tab-features .etabs .tab:nth-child(8),
-.tab-features .etabs .tab:nth-child(9),
-.tab-features .etabs .tab:nth-child(10) {
-    padding-right: 0;
-}
-
-.tab-features .etabs .tab:nth-child(6) .icon-sm,
-.tab-features .etabs .tab:nth-child(7) .icon-sm,
-.tab-features .etabs .tab:nth-child(8) .icon-sm,
-.tab-features .etabs .tab:nth-child(9) .icon-sm,
-.tab-features .etabs .tab:nth-child(10) .icon-sm {
-    width: 55px;
+.details-image img {
+    width: 100%;
     height: auto;
-    margin-right: 10px;
-    vertical-align: sub;
-    color: #ffffff;
+    border-radius: 10px;
 }
 
-.tab-features .etabs .tab:nth-child(6) .icon-sm:hover,
-.tab-features .etabs .tab:nth-child(7) .icon-sm:hover,
-.tab-features .etabs .tab:nth-child(8) .icon-sm:hover,
-.tab-features .etabs .tab:nth-child(9) .icon-sm:hover,
-.tab-features .etabs .tab:nth-child(10) .icon-sm:hover {
-    color: #ffffff;
+.description-text {
+    color: #000000;
+    font-size: 1.2em;
+    line-height: 1.5;
 }
-
-.tab-features .etabs .tab:nth-child(6) .active h5,
-.tab-features .etabs .tab:nth-child(7) .active h5,
-.tab-features .etabs .tab:nth-child(8) .active h5,
-.tab-features .etabs .tab:nth-child(9) .active h5,
-.tab-features .etabs .tab:nth-child(10) .active h5,
-.tab-features .etabs .tab:nth-child(6) .active i,
-.tab-features .etabs .tab:nth-child(7) .active i,
-.tab-features .etabs .tab:nth-child(8) .active i,
-.tab-features .etabs .tab:nth-child(9) .active i,
-.tab-features .etabs .tab:nth-child(10) .active i {
-    color: black;
-}
-
-
 
 /* ==================================================================================
    09. NEWSLETTER, FAST-REGISTRATION HEADER & SIGNUP DIVIDER SECTIONS
@@ -1802,6 +1835,20 @@ p {
 /* .footer, .container{
 
 } */
+
+
+    .footer{
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw 20vw;
+        column-gap: 50px;
+        height:50vh;
+        padding:20px;
+        padding-left: 100px
+    }
+
+    .footer-item .text-logo {
+        margin-bottom:100px;
+    }
 .footer, .footer a{
     color: #ced3d8;
 }

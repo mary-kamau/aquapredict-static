@@ -30,10 +30,10 @@
     ============================== -->
 
     <!-- Slick CSS -->
-    <!-- <link rel="stylesheet" type="text/css"
+    <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" /> -->
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="/assets/css/plugins/bootstrap.min.css">
@@ -264,274 +264,373 @@
             </div><!-- /End Background Overlay -->
         </header>
 
-        <?php include (__DIR__ . '/../pages/about.php'); ?>
+        <section class="it-industries-section">
+            <div class="section-header">
+                <span class="small-heading">best it service</span>
+                <h2 class="section-title">It Industries We're Offering</h2>
+            </div>
+            <div class="industries-container">
+                <div class="industry-card">
+                    <div class="card-icon"><i class="icon icon-education"></i></div>
+                    <h3>At the Forefront of Swimming Analytics and Machine Learning</h3>
+                    <p>AquaPredict employs sophisticated
+                        AI algorithms to evaluate extensive swimmer data.Equipping UK swimmers and coaches with a powerful tool for
+                        strategic planning and enhanced outcomes.</p>
+                    <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="industry-card">
+                    <div class="card-icon"><i class="icon icon-ai"></i></div>
+                    <h3>Real-Time Analytics</h3>
+                    <p>Gain instant insights with our real-time analytics feature, providing you with up-to-the-minute
+                        data to make informed decisions swiftly.</p>
+                    <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="industry-card">
+                    <div class="card-icon"><i class="icon icon-business"></i></div>
+                    <h3>Seamless Integration</h3>
+                    <p>Experience hassle-free integration with existing systems,
+                        thanks to our user-friendly API that ensures smooth connectivity and data flow.</p>
+                    <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- <div class="contact-info">
+                <span>Provide IT services to hundreds of customers</span>
+                <a href="tel:+8801310069824">+88 01310-069824</a>
+            </div> -->
+        </section>
+
 
         <!-- ==================================================
             FEATURES SECTION
         ======================================================= -->
-        <?php include (__DIR__ . '/../pages/features.php'); ?>
-
-        <!-- <section class="features-section">
+        <section class="it-solutions-section">
             <div class="section-header">
-                <span class="small-heading">service <span class="highlight">it solutions</span></span>
-                <h2 class="section-title">All Professional <span class="highlight">IT Solutions</span> & Services</h2>
+                <span class="small-heading">services <span class="highlight">and features</span></span>
+                <h2 class="section-title">All AquaPredict <span class="highlight">Features</span> & Services</h2>
             </div>
             <div class="carousel-container">
                 <div class="carousel">
                     <div class="carousel-item">
-                        <div class="feature-card"
-                            data-description="UNLOCK VALUABLE INSIGHTS WITH OUR AI-DRIVEN ANALYSIS,
-                                    PROVIDING YOU WITH INTELLIGENT RECOMMENDATIONS TO ENHANCE YOUR STRATEGY."
-                            data-bg="url('/assets/images/features/usrr_interact_images.png')">
+                        <div class="it-solution-card">
                             <div class="card-icon">A</div>
                             <h3>AI-Driven Insights</h3>
-                            <a href="#" class="card-link">Read Out More</a>
+                            <div class="card-icon-img"><i class="icon icon-layers"></i>
+                            </div>
+                            <a href="#" class="card-link" data-description="UNLOCK VALUABLE INSIGHTS WITH OUR AI-DRIVEN ANALYSIS,
+                                    PROVIDING YOU WITH INTELLIGENT RECOMMENDATIONS TO ENHANCE YOUR STRATEGY."
+                                data-bg="/assets/images/features/light-bulb-ideas-creative-design-graphic.jpg">Read Out
+                                More</a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="feature-card" data-title="Voice Over Internet Protocol"
-                            data-description="Details about Voice Over Internet Protocol"
-                            data-bg="url('images/voip.jpg')">
-                            <div class="card-icon">V</div>
-                            <h3>Voice Over Internet Protocol</h3>
-                            <a href="#" class="card-link">Read Out More</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="feature-card" data-title="Clouds Backup Services"
-                            data-description="Details about Clouds Backup Services"
-                            data-bg="url('images/cloud-backup.jpg')">
-                            <div class="card-icon">C</div>
-                            <h3>Clouds Backup Services</h3>
-                            <a href="#" class="card-link">Read Out More</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="feature-card" data-title="Mobile and Remote Networking"
-                            data-description="Details about Mobile and Remote Networking"
-                            data-bg="url('images/mobile-networking.jpg')">
+                        <div class="it-solution-card">
                             <div class="card-icon">M</div>
-                            <h3>Mobile and Remote Networking</h3>
-                            <a href="#" class="card-link">Read Out More</a>
+                            <h3>Mobile Optimisation</h3>
+                            <div class="card-icon-img"><i class="icon icon-pictures"></i></div>
+                            <a href="#" class="card-link" data-description="ACCESS OUR PLATFORM ON THE GO WITH MOBILE OPTIMISATION,
+                                    ENSURING YOU HAVE THE
+                                          TOOLS YOU NEED, WHENEVER YOU NEED THEM."
+                                data-bg="/assets/images/features/representation-user-experience-interface-design.jpg">Read
+                                Out More</a>
+
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="feature-card" data-title="Data Backup and Restoration"
-                            data-description="Details about Data Backup and Restoration"
-                            data-bg="url('images/data-backup.jpg')">
+                        <div class="it-solution-card">
+                            <div class="card-icon">S</div>
+                            <h3>Advanced Security Measures</h3>
+                            <div class="card-icon-img"><i class="icon icon-shield"></i></div>
+                            <a href="#" class="card-link" data-description="BENEFIT FROM UNPARALLELED SECURITY WITH OUR
+                                    ADVANCED ENCRYPTION, AND DATA
+                                    PROTECTION MEASURES,
+                                    KEEPING YOUR INFORMATION SAFE AND SECURE."
+                                data-bg="/assets/images/features/standard-quality-control-concept-m.jpg"> Read Out
+                                More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="it-solution-card">
                             <div class="card-icon">D</div>
-                            <h3>Data Backup and Restoration</h3>
-                            <a href="#" class="card-link">Read Out More</a>
+                            <h3>Data Visualisation</h3>
+                            <div class="card-icon-img"><i class="icon icon-chart-bar"></i></div>
+                            <a href="#" class="card-link" data-description="VISUALISE YOUR DATA WITH OUR DYNAMIC TOOLS."
+                                data-bg="/assets/images/features/pexels-rdne-stock-project-7947663.jpg">Read Out
+                                More</a>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="it-solution-card">
+                            <div class="card-icon">C</div>
+                            <h3>Cloud-Based Solutions</h3>
+                            <div class="card-icon-img"><i class="icon icon-cloud"></i></div>
+                            <a href="#" class="card-link"
+                                data-description="Leverage the power of cloud computing with our cloud-based solutions,offering scalability and flexibility without the heavy infrastructure costs."
+                                data-bg="/assets/images/features/cloud-computing-technology-scheme-with-long-shadows\42972.jpg">Read
+                                Out More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="it-solution-card">
+                            <div class="card-icon">P</div>
+                            <h3>Personalised Notifications</h3>
+                            <div class="card-icon-img"><i class="icon icon-lightbulb"></i></div>
+                            <a href="#" class="card-link"
+                                data-description="Stay informed with personalised notifications that keep you updated on important developments, tailored specifically to your interests."
+                                data-bg="/assets/images/features/pexels-emmanuel-jason-eliphalet-10054188.jpg">Read Out
+                                More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="it-solution-card">
+                            <div class="card-icon">C</div>
+                            <h3>Collaborative Tools</h3>
+                            <div class="card-icon-img"><i class="icon icon-chart-bar"></i></div>
+                            <a href="#" class="card-link" data-description="Enhance teamwork with our collaborative tools, ensuring you have the
+                                        tools you need, whenever you need them. Enhance teamwork with our collaborative tools, ensuring you have the
+                                        tools you need, whenever you need them."
+                                data-bg="/assets/images/features/pexels-kindel-media-7688336.jpg">Read Out More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="it-solution-card">
+                            <div class="card-icon">D</div>
+                            <h3>Comprehensive Reporting</h3>
+                            <div class="card-icon-img"><i class="icon icon-analytics"></i></div>
+                            <a href="#" class="card-link" data-description="Compile comprehensive reports with ease, offering detailed insights and
+                                        analytics to guide your decision-making process."
+                                data-bg="/assets/images/features/pexels-lukas-669612.jpg">Read Out More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="it-solution-card">
+                            <div class="card-icon">D</div>
+                            <h3>Customer Support</h3>
+                            <div class="card-icon-img"><i class="icon icon-heart"></i></div>
+                            <a href="#" class="card-link" data-description="Rely on our 24/7 customer support for assistance at any hour,ensuring you
+                                        receive help whenever you need it"
+                                data-bg="/assets/images/features/pexels-tima-miroshnichenko-5453832.jpg">Read Out
+                                More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="it-solution-card">
+                            <div class="card-icon">M</div>
+                            <h3>Multilingual Support</h3>
+                            <div class="card-icon-img"><i class="icon icon-tools"></i></div>
+                            <a href="#" class="card-link" data-description="Break down language barriers with multilingual support, making our platform
+                                        accessible to a diverse user base."
+                                data-bg="/assets/images/features/pexels-nastyasensei-335393.jpg">Read Out
+                                More</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="details-section" id="details-section">
-            <p id="details-description"></p>
-        </section> -->
-        <!-- =============================
+            </div>
+    </div>
+    </section>
+    <div id="details-section-container"></div>
+    <!-- =============================
              /END FEATURES TAB
         ============================== -->
 
 
-        <!-- ==================================================
+    <!-- ==================================================
             SIGNUP DIVIDER
         ======================================================= -->
-        <section id="canvas-bg" class="dark-bg signup-divider">
-            <div class="container">
-                <div class="wrapper-lg">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="text-white">Start Your AquaPredict Journey Today!</h2>
-                            <p class="large text-white">Become part of the AquaPredict community today and dive into a
-                                world of
-                                detailed performance analysis and tailored
-                                training plans.</p>
-                            <!-- <p class="signup-handwritten text-white">Why wait? Start now! <br>No credit card needed</p> -->
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <form id="signup-divider" role="form">
-                            <a class="btn btn-color" data-toggle="modal" href="javascript:void(0)"
-                                onclick="window.location.href='https://aquapredict-frontend.onrender.com/signup';">Join
-                                Today!</a>
-                        </form>
+    <section id="canvas-bg" class="dark-bg signup-divider">
+        <div class="container">
+            <div class="wrapper-lg">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-white">Start Your AquaPredict Journey Today!</h2>
+                        <p class="large text-white">Become part of the AquaPredict community today and dive into a
+                            world of
+                            detailed performance analysis and tailored
+                            training plans.</p>
+                        <!-- <p class="signup-handwritten text-white">Why wait? Start now! <br>No credit card needed</p> -->
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- =============================
+                <div class="row">
+                    <form id="signup-divider" role="form">
+                        <a class="btn btn-color" data-toggle="modal" href="javascript:void(0)"
+                            onclick="window.location.href='https://aquapredict-frontend.onrender.com/signup';">Join
+                            Today!</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================
              /END SIGNUP SECTION 
         ============================== -->
 
 
-        <!-- =============================
+    <!-- =============================
              PRICING SECTION
         ============================== -->
-        <?php include (__DIR__ . '/../pages/pricing.php'); ?>
-        <!-- =============================
+    <?php include (__DIR__ . '/../pages/pricing.php'); ?>
+    <!-- =============================
              /END PRICING SECTION 
         ============================== -->
 
 
-        <!-- =======================================================
+    <!-- =======================================================
              TESTIMONIALS WITH PRESS/CLIENTS LOGOS
         ============================================================ -->
-        <section class="testimonial-section">
-            <h2 class="section-title">Transforming Real Lives. Discover Our User Testimonials.</h2>
-            <div class="testimonials-container">
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p class="quote">AquaPredict revolutionised my coaching approach.The accuracy in predicting my
-                            swimmers' progress is truly remarkable.</p>
-                        <div class="rating">★★★★★</div>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="/assets/images/testimonials/pexels-andrea-piacquadio-948873.jpg" alt="Olivia Smith">
-                        <div class="author-info">
-                            <p class="author-name">Olivia Smith</p>
-                            <p class="author-title">London, UK</p>
-                        </div>
-                    </div>
+    <section class="testimonial-section">
+        <h2 class="section-title">Transforming Real Lives. Discover Our User Testimonials.</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p class="quote">AquaPredict revolutionised my coaching approach.The accuracy in predicting my
+                        swimmers' progress is truly remarkable.</p>
+                    <div class="rating">★★★★★</div>
                 </div>
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p class="quote">As a professional swimmer, AquaPredict's insights have been invaluable.It's
-                            like
-                            having a futuristic coach!</p>
-                        <div class="rating">★★★★★</div>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="/assets/images/testimonials/pexels-kindel-media-8688525.jpg" alt="Cameron Williamson">
-                        <div class="author-info">
-                            <p class="author-name">Ethan Taylor</p>
-                            <p class="author-title">Manchester, UK</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p class="quote">I was sceptical at first, but AquaPredict's precise forecasts have improved my
-                            training efficiency incredibly.</p>
-                        <div class="rating">★★★★★</div>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="/assets/images/testimonials/pexels-tima-miroshnichenko-6012262.jpg"
-                            alt="Leslie Alexander">
-                        <div class="author-info">
-                            <p class="author-name">Amelia Johnson</p>
-                            <p class="author-title">Edinburgh, Scotland</p>
-                        </div>
+                <div class="testimonial-author">
+                    <img src="/assets/images/testimonials/pexels-andrea-piacquadio-948873.jpg" alt="Olivia Smith">
+                    <div class="author-info">
+                        <p class="author-name">Olivia Smith</p>
+                        <p class="author-title">London, UK</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- =============================
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p class="quote">As a professional swimmer, AquaPredict's insights have been invaluable.It's
+                        like
+                        having a futuristic coach!</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="testimonial-author">
+                    <img src="/assets/images/testimonials/pexels-kindel-media-8688525.jpg" alt="Cameron Williamson">
+                    <div class="author-info">
+                        <p class="author-name">Ethan Taylor</p>
+                        <p class="author-title">Manchester, UK</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p class="quote">I was sceptical at first, but AquaPredict's precise forecasts have improved my
+                        training efficiency incredibly.</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="testimonial-author">
+                    <img src="/assets/images/testimonials/pexels-tima-miroshnichenko-6012262.jpg"
+                        alt="Leslie Alexander">
+                    <div class="author-info">
+                        <p class="author-name">Amelia Johnson</p>
+                        <p class="author-title">Edinburgh, Scotland</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============================
              /END TESTIMONIALS
         ============================== -->
 
 
-        <!-- ==================================================
+    <!-- ==================================================
             TEAM
         ======================================================= -->
-        <!-- =============================
+    <!-- =============================
              /END TEAM SECTION 
         ============================== -->
 
 
-        <!-- ==================================================
+    <!-- ==================================================
             MOBILE DOWNLOAD SECTION
         ======================================================= -->
-        <!-- =============================
+    <!-- =============================
              /END MOBILE DOWNLOAD SECTION 
         ============================== -->
 
 
-        <!-- ==================================================
+    <!-- ==================================================
             NEWSLETTER AND SOCIAL DIVIDER
         ======================================================= -->
-        <!-- =============================
+    <!-- =============================
              /END NEWSLETTER SECTION 
         ============================== -->
 
 
-        <!-- ==================================================
+    <!-- ==================================================
             FOOTER
         ======================================================= -->
-        <footer class="footer dark-bg" id="footer">
-            <div class="footer-item">
-                <span class="text-logo">About Us</span>
-                <p>Navigate through AquaPredict's offerings with our footer links,
-                    including detailed insights into our
-                    technology, user testimonials,
-                    and how to get started on improving your performance.</p>
-            </div>
+    <footer class="footer dark-bg" id="footer">
+        <div class="footer-item">
+            <span class="text-logo">About Us</span>
+            <p>Navigate through AquaPredict's offerings with our footer links,
+                including detailed insights into our
+                technology, user testimonials,
+                and how to get started on improving your performance.</p>
+        </div>
 
-            <div class="footer-item">
-                <span class="text-logo">Contact</span>
-                <ul>
-                    <li class="mt-3">
-                        <a href="mailto:hello@aquapredict.co.uk">hello@aquapredict.co.uk</a>
-                    </li>
-                    <li>
-                        Unit 4, Durham Workspace,
-                    </li>
-                    <li>Abbey Road, Durham DH1 5JZ</li>
-                    <li>
-                        0044(0)3331886566
-                    </li>
-                    <li>
-                        <a href="https://aquapredict.co.uk" class="contact-link">https://aquapredict.co.uk</a>
-                    </li>
-                    <li>
-                        Ⓒ AquaPredict Ltd
-                    </li>
-                </ul>
-            </div>
+        <div class="footer-item">
+            <span class="text-logo">Contact</span>
+            <ul>
+                <li class="mt-3">
+                    <a href="mailto:hello@aquapredict.co.uk">hello@aquapredict.co.uk</a>
+                </li>
+                <li>
+                    Unit 4, Durham Workspace,
+                </li>
+                <li>Abbey Road, Durham DH1 5JZ</li>
+                <li>
+                    0044(0)3331886566
+                </li>
+                <li>
+                    <a href="https://aquapredict.co.uk" class="contact-link">https://aquapredict.co.uk</a>
+                </li>
+                <li>
+                    Ⓒ AquaPredict Ltd
+                </li>
+            </ul>
+        </div>
 
-            <div class="footer-item">
-                <span class="text-logo">Links</span>
-                <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a class="nav-footer-link"
-                            href="https://docs.google.com/document/d/1ZUXlvDDxSxG72DLxE5DOzaOjkBtKMGUjelDGKQYbspE/edit#heading=h.bwy8qj1gw37k"
-                            target="_blank">Terms and Conditions</a>
-                    </li>
-                    <li>
-                        <a class="nav-footer-link"
-                            href="https://docs.google.com/document/d/1HnWm8PhkhBTKqwZs35NnZr7Nv-jWBweHwBrcDavikgU/edit"
-                            target="_blank">Privacy Notice</a>
-                    </li>
-                    <li>
-                        <a class="nav-footer-link"
-                            href="https://docs.google.com/document/d/1bK1aEQA_hVMCwSsayDxwn-NIyc_RpteXgHXYz7naYbw/edit"
-                            target="_blank">Acceptable Use Notice</a>
-                    </li>
-                    <li>
-                        <a class="nav-footer-link"
-                            href="https://docs.google.com/document/d/1IuE6sNsyePEW-V7OROyv2s1NTsHIfJ_CPNCO2E-UM9E/edit"
-                            target="_blank">Cookies Policy</a>
-                    </li>
-                    <li>
-                        <a class="nav-footer-link"
-                            href="https://docs.google.com/document/d/12VHKwDCkwcE9lRe6ZvjptnsH8dv1k6gO-GYE9Elu5Cw/edit"
-                            target="_blank">Accessibility</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="footer-item">
+            <span class="text-logo">Links</span>
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a class="nav-footer-link"
+                        href="https://docs.google.com/document/d/1ZUXlvDDxSxG72DLxE5DOzaOjkBtKMGUjelDGKQYbspE/edit#heading=h.bwy8qj1gw37k"
+                        target="_blank">Terms and Conditions</a>
+                </li>
+                <li>
+                    <a class="nav-footer-link"
+                        href="https://docs.google.com/document/d/1HnWm8PhkhBTKqwZs35NnZr7Nv-jWBweHwBrcDavikgU/edit"
+                        target="_blank">Privacy Notice</a>
+                </li>
+                <li>
+                    <a class="nav-footer-link"
+                        href="https://docs.google.com/document/d/1bK1aEQA_hVMCwSsayDxwn-NIyc_RpteXgHXYz7naYbw/edit"
+                        target="_blank">Acceptable Use Notice</a>
+                </li>
+                <li>
+                    <a class="nav-footer-link"
+                        href="https://docs.google.com/document/d/1IuE6sNsyePEW-V7OROyv2s1NTsHIfJ_CPNCO2E-UM9E/edit"
+                        target="_blank">Cookies Policy</a>
+                </li>
+                <li>
+                    <a class="nav-footer-link"
+                        href="https://docs.google.com/document/d/12VHKwDCkwcE9lRe6ZvjptnsH8dv1k6gO-GYE9Elu5Cw/edit"
+                        target="_blank">Accessibility</a>
+                </li>
+            </ul>
+        </div>
 
-            <div class="footer-item">
-                <span class="text-logo">Newsletter</span>
-            </div>
-        </footer>
+        <div class="footer-item">
+            <span class="text-logo">Newsletter</span>
+        </div>
+    </footer>
 
     </div>
 
@@ -548,9 +647,6 @@
     </script>
     <!-- Custom Script -->
     <script src="/assets/js/custom.js"></script>
-
-
-
 </body>
 
 </html>

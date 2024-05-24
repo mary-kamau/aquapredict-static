@@ -138,6 +138,101 @@ $(document).ready(function() {
 
 "use strict";
 
+let sectionCount = 0;
+
+$('.card-link').click(function(event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    console.log('Read More clicked'); // For debugging
+
+    const description = $(this).data('description');
+    const backgroundImage = $(this).data('bg');
+
+    sectionCount++;
+    const isOdd = sectionCount % 2 !== 0;
+
+    // Create new section with the details
+    const detailsSection = `
+        <section class="details-section ${isOdd ? 'odd' : 'even'}">
+            <div class="details-content">
+                <div class="details-text">
+                    <p class="description-text">${description}</p>
+                </div>
+                <div class="details-image">
+                    <img src="${backgroundImage}" alt="Details Image">
+                </div>
+            </div>
+        </section>
+    `;
+
+    // Append new section to the container and slide it down
+    $('#details-section-container').html(detailsSection).slideDown();
+});
+
+// Carousel logic
+// const $carousel = $('.carousel');
+// const $items = $('.carousel-item');
+// const totalItems = $items.length / 5 ;
+
+
+// let currentIndex = 0;
+// function showNextItem() {
+//     // currentIndex = (currentIndex + 1) % totalItems;
+//     // if (currentIndex === totalItems - 1) {
+//     //     updateCarousel();
+//     //     currentIndex = 0;
+//     //     return; // Exit the function early to prevent additional interval delay
+//     // }
+//     // updateCarousel();
+
+//     currentIndex = (currentIndex + 1) % totalItems;
+//     updateCarousel();
+
+// }
+
+// function updateCarousel() {
+//     const offset = -currentIndex * 100;
+//     $carousel.css('transform', `translateX(${offset}%)`);
+// }
+
+// setInterval(showNextItem, 3000); // Change slide every 3 second
+
+
+
+const $carousel = $('.carousel');
+const $items = $('.carousel-item');
+let currentIndex = 0;
+
+function getVisibleItemsCount() {
+    const width = $(window).width();
+    if (width <= 599) return 1;
+    if (width <= 767) return 2;
+    if (width <= 991) return 3;
+    if (width <= 1199) return 4;
+    return 5;
+}
+
+function updateCarousel() {
+    const visibleItems = getVisibleItemsCount();
+    const totalItems = Math.ceil($items.length / visibleItems);
+    const offset = -currentIndex * 100 / visibleItems;
+    $carousel.css('transform', `translateX(${offset}%)`);
+}
+
+function showNextItem() {
+    const visibleItems = getVisibleItemsCount();
+    const totalItems = Math.ceil($items.length / visibleItems);
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateCarousel();
+}
+
+$(window).resize(updateCarousel);
+
+setInterval(showNextItem, 3000); // Change slide every 3 seconds
+
+updateCarousel();
+
+
 
 /* =====================================
     PARALLAX STELLAR WITH MOBILE FIXES                    
@@ -183,7 +278,23 @@ $(function(){
 //     cycle: 10000
 // });
 
-// Initialize Slick Carousel
+
+// Handle click event on carousel items
+// $('.feature-card').click(function() {
+//     var title = $(this).data('title');
+//     var description = $(this).data('description');
+//     var bgImage = $(this).data('bg');
+
+//     $('#details-title').text(title);
+//     $('#details-description').text(description);
+//     $('#details-section').css('background-image', bgImage);
+
+//     $('html, body').animate({
+//         scrollTop: $('#details-section').offset().top
+//     }, 1000);
+
+//     $('#details-section').fadeIn();
+// });
 
 
 $('.tabs.features').easytabs({

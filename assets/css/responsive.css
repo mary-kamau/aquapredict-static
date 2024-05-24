@@ -6,98 +6,146 @@
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
-@media (min-width: 1200px) {
-    /*------------------------------------------*/
-    /*   Features
-    /*------------------------------------------*/
-    /* .features-section {
-        padding: 20px;
-        background-color: #111;
-        color: #fff;
-        text-align: center;
-    }
-    
-    .section-header {
-        margin-bottom: 20px;
-    }
-    
-    .small-heading {
-        font-size: 1em;
-        text-transform: uppercase;
-        margin-bottom: 0.5em;
-    }
-    
-    .highlight {
-        color: #00bcd4;
-    }
-    
-    .section-title {
-        font-size: 2em;
-        margin: 0;
-    }
-    
-    .carousel-container {
-        overflow: hidden;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    
-    .carousel {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-    }
-    
-    .carousel-item {
-        min-width: calc(100% / 5);
-    }
-    
-    .feature-card {
-        background: #222;
-        padding: 20px;
-        border-radius: 10px;
-        margin: 10px;
-        text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
-    .card-icon {
-        font-size: 2em;
-        margin-bottom: 10px;
-        color: #00bcd4;
-        background: rgba(0, 188, 212, 0.1);
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-    
-    .card-icon-img img {
-        max-width: 100px;
-        margin-bottom: 20px;
-    }
-    
-    .card-link {
-        color: #00bcd4;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    
-    .card-link:hover {
-        text-decoration: underline;
-    }
-    
-    .details-section {
-        display: none;
-        background: #1a1b30;
-        color: #ffffff;
-        height: 100vh;
-        padding: 50px;
-        box-sizing: border-box;
-    } */
 
+@media (min-width: 1200px) {
+    .industries-container {
+        flex-wrap: nowrap;
+    }
+
+    .industry-card {
+        max-width: 300px;
+    }
+    /* ==========================================================================
+   08. FEATURES TAB
+   ========================================================================== */ 
+   /* .it-solutions-section {
+       padding: 20px;
+       background-color: #111;
+       color: #fff;
+       text-align: center;
+   }
+   
+   .section-header {
+       margin-bottom: 20px;
+   }
+   
+   .small-heading {
+       font-size: 1em;
+       text-transform: uppercase;
+       margin-bottom: 0.5em;
+   }
+   
+   .highlight {
+       color: #00bcd4;
+   }
+   
+   .section-title {
+       font-size: 2em;
+       margin: 0;
+   }
+   
+   .carousel-container {
+       overflow: hidden;
+       max-width: 1200px;
+       margin: 0 auto;
+   }
+   
+   .carousel {
+       display: flex;
+       transition: transform 0.5s ease-in-out;
+   }
+   
+   .carousel-item {
+       min-width: calc(100% / 5);
+   }
+   
+   .it-solution-card {
+       background: #222;
+       padding: 20px;
+       border-radius: 10px;
+       margin: 10px;
+       text-align: center;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   }
+   
+   .card-icon {
+       font-size: 2em;
+       margin-bottom: 10px;
+       color: #00bcd4;
+       background: rgba(0, 188, 212, 0.1);
+       border-radius: 50%;
+       width: 50px;
+       height: 50px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 0 auto;
+   }
+   
+   .card-icon-img img {
+       max-width: 100px;
+       margin-bottom: 20px;
+   }
+   
+   .card-link {
+       color: #00bcd4;
+       text-decoration: none;
+       font-weight: bold;
+   }
+   
+   .card-link:hover {
+       text-decoration: underline;
+   }
+   
+   #details-section-container {
+       display: none;
+   }
+   
+   .details-section {
+       height: 60vh;
+       color: #fff;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 20px;
+       text-align: center;
+   }
+   
+   .details-content {
+       display: flex;
+       align-items: center;
+       width: 100%;
+       max-width: 1200px;
+       padding: 20px;
+       box-sizing: border-box;
+   }
+   
+   .details-section.odd .details-content {
+       flex-direction: row-reverse;
+   }
+   
+   .details-text {
+       flex: 1;
+       padding: 20px;
+   }
+   
+   .details-image {
+       flex: 1;
+       max-width: 100%;
+       padding: 50px;
+   }
+   
+   .details-image img {
+       width: 100%;
+       height: auto;
+       border-radius: 10px;
+   }
+   
+   .description-text {
+       color: #000000;
+       font-size: 1.2em;
+       line-height: 1.5;
+   } */
     /*------------------------------------------*/
     /*   Testimonial
     /*------------------------------------------*/
@@ -228,6 +276,35 @@
         margin-bottom: 146px;
     }
 
+    .carousel-item {
+        min-width: calc(100% / 4);
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+
+    .industry-card {
+        max-width: 300px;
+    }
+
+    .industry-card h3 {
+        font-size: 1.4em;
+    }
+
+    .industry-card p {
+        font-size: 0.95em;
+    }
+
+    .contact-info {
+        font-size: 1.1em;
+    }
+
+    .description-text {
+        font-size: 1.1em;
+    }
+
     /*------------------------------------------*/
     /*   Testimonial
     /*------------------------------------------*/
@@ -340,9 +417,6 @@
     .hero-app .hero-section{
         padding-top: 10%;
     }
-
-    
-	
 }
 
 
@@ -351,7 +425,6 @@
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 @media (min-width: 992px) {
-
     /*-------------------------------------------------------------*/
     /*    Set Container Width at 970 also for Large Devices Desktop
     /*-------------------------------------------------------------*/
@@ -360,6 +433,42 @@
         width: 970px;
     }
 
+
+
+    .carousel-item {
+        min-width: calc(100% / 3);
+    }
+
+
+    .details-content {
+        flex-direction: column; /* Column layout for smaller screens */
+        align-items: center;
+    }
+
+    .description-text {
+        font-size: 1em;
+    }
+
+    .section-title {
+        font-size: 1.75em;
+    }
+
+
+    .industry-card {
+        max-width: 300px;
+    }
+
+    .industry-card h3 {
+        font-size: 1.4em;
+    }
+
+    .industry-card p {
+        font-size: 0.95em;
+    }
+
+    .contact-info {
+        font-size: 1.1em;
+    }
 
     /*------------------------------------------*/
     /*   Testimonial
@@ -495,64 +604,48 @@
         padding-right: 15px;
     }
 
+    .industries-container {
+        flex-direction: column;
+    }
+
+    .industry-card {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .industry-card h3 {
+        font-size: 1.3em;
+    }
+
+    .industry-card p {
+        font-size: 0.9em;
+    }
+
+    .contact-info {
+        font-size: 1em;
+    }
+
     /*------------------------------------------*/
     /*   Features Tab
     /*------------------------------------------*/
-    .tab-features .large{
-        margin-bottom: 50px;
+
+    .carousel-item {
+        min-width: calc(100% / 3);
     }
 
-    .tab-features .etabs {
-        float: none;
-        overflow: hidden;
-        margin: 0 auto;
-        height: auto;
-        display: block;
-        text-align: left;
+    .section-title {
+        font-size: 1.75em;
     }
 
-    .tab-features .etabs .tab {
-        display: table;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        border-bottom: 1px solid #ffffff;
-        padding: 1% 0;
-        border-right: 0;
-        opacity: 1;
+    .details-content {
+        flex-direction: column; /* Column layout for smaller screens */
+        align-items: center;
     }
 
-    .tab-features .etabs .tab:first-child {
-        border-top: 1px solid #ffffff;
+    .description-text {
+        font-size: 1em;
     }
 
-    .tab-features .etabs .large {
-        margin-bottom: 50px;
-    }
-
-    .tab-features .etabs .icon-sm {
-        padding-left: 15px;
-    }
-
-    .tab-features .etabs .tab.active {
-        background-color: #ffffff;
-    }
-
-    .tab-features .etabs .tab.active h5, .tab-features .etabs .tab.active .icon-sm i{
-        color: #3e3e3e;
-    }
-
-    .tab-features .etabs .tab.active:before {
-        display: none;
-    }
-
-    .tab-features .etabs h5{
-        display: inline-block;
-    }
-
-    .tab-icon .large{
-        margin-bottom: 10px;
-    }
 
     /*------------------------------------------*/
     /*   Testimonials
@@ -815,13 +908,41 @@
         bottom: 20px;
     }
 
+    .industries-container {
+        flex-direction: column;
+    }
+
+    .industry-card {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .industry-card h3 {
+        font-size: 1.2em;
+    }
+
+    .industry-card p {
+        font-size: 0.85em;
+    }
+
+    .contact-info {
+        font-size: 0.95em;
+    }
     /*------------------------------------------*/
     /*  Features Tab
     /*------------------------------------------*/
-    .tab-features .tab-content {
-        height: auto;
-        padding-bottom: 100px;
+
+    .carousel-item {
+        min-width: calc(100% / 2);
     }
+    .section-title {
+        font-size: 1.5em;
+    }
+
+    .description-text {
+        font-size: 0.9em;
+    }
+
 
     /*------------------------------------------*/
     /*   Newsletter
@@ -1030,6 +1151,54 @@
         top: 36%;
     }
 
+    .industries-container {
+        flex-direction: column;
+    }
+
+    .industry-card {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .industry-card h3 {
+        font-size: 1.1em;
+    }
+
+    .industry-card p {
+        font-size: 0.8em;
+    }
+
+    .contact-info {
+        font-size: 0.9em;
+    }.industries-container {
+        flex-direction: column;
+    }
+
+    .industry-card {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .industry-card h3 {
+        font-size: 1.1em;
+    }
+
+    .industry-card p {
+        font-size: 0.8em;
+    }
+
+    .contact-info {
+        font-size: 0.9em;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+    }
+
+    .description-text {
+        font-size: 0.8em;
+    }
+
     /*------------------------------------------*/
     /*   Testimonial-Press Section
     /*------------------------------------------*/
@@ -1056,6 +1225,29 @@
 
     .author-title {
         font-size: 0.85em;
+    }
+
+
+    .section-title {
+        font-size: 1.4em;
+    }
+
+    .it-solution-card {
+        padding: 15px;
+    }
+
+    .card-icon {
+        font-size: 1.5em;
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-icon-img img {
+        max-width: 80px;
+    }
+
+    .card-link {
+        font-size: 0.9em;
     }
 
     /*------------------------------------------*/
@@ -1168,6 +1360,31 @@
     /*------------------------------------------*/
     .signup-divider .btn{
         width: 77%;
+    }
+
+      .industries-container {
+        flex-direction: column;
+    }
+
+    .industry-card {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .industry-card h3 {
+        font-size: 1em;
+    }
+
+    .industry-card p {
+        font-size: 0.75em;
+    }
+
+    .contact-info {
+        font-size: 0.85em;
+    }
+
+    .description-text {
+        font-size: 0.75em;
     }
 
     /*------------------------------------------*/
