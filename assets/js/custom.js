@@ -151,15 +151,19 @@ $('.card-link').click(function(event) {
     sectionCount++;
     const isOdd = sectionCount % 2 !== 0;
 
+    // Determine the order of elements based on odd/even status
+    const imageFirst = isOdd ? 'details-image' : 'details-text';
+    const textFirst = isOdd ? 'details-text' : 'details-image';
+
     // Create new section with the details
     const detailsSection = `
         <section class="details-section ${isOdd ? 'odd' : 'even'}">
             <div class="details-content">
-                <div class="details-text">
-                    <p class="description-text">${description}</p>
-                </div>
-                <div class="details-image">
+                <div class="${imageFirst}">
                     <img src="${backgroundImage}" alt="Details Image">
+                </div>
+                <div class="${textFirst}">
+                    <p class="description-text">${description}</p>
                 </div>
             </div>
         </section>
@@ -168,6 +172,8 @@ $('.card-link').click(function(event) {
     // Append new section to the container and slide it down
     $('#details-section-container').html(detailsSection).slideDown();
 });
+
+
 
 // Carousel logic
 // const $carousel = $('.carousel');
