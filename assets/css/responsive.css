@@ -417,6 +417,10 @@
     .hero-app .hero-section{
         padding-top: 10%;
     }
+
+    .carousel-item {
+        min-width: calc(100% / 4);
+    }
 }
 
 
@@ -433,26 +437,9 @@
         width: 970px;
     }
 
-
-
     .carousel-item {
         min-width: calc(100% / 3);
     }
-
-
-    .details-content {
-        flex-direction: column; /* Column layout for smaller screens */
-        align-items: center;
-    }
-
-    .description-text {
-        font-size: 1em;
-    }
-
-    .section-title {
-        font-size: 1.75em;
-    }
-
 
     .industry-card {
         max-width: 300px;
@@ -630,20 +617,22 @@
     /*------------------------------------------*/
 
     .carousel-item {
-        min-width: calc(100% / 3);
+        min-width: calc(100% / 2);
     }
 
-    .section-title {
-        font-size: 1.75em;
+    .details-section {
+        height: auto;
+        flex-direction: column;
     }
 
     .details-content {
-        flex-direction: column; /* Column layout for smaller screens */
-        align-items: center;
+        flex-direction: column;
     }
 
-    .description-text {
-        font-size: 1em;
+    .details-text,
+    .details-image {
+        width: 100%;
+        padding: 10px;
     }
 
 
@@ -1003,6 +992,26 @@
         display: none;
     }
 
+    .carousel-item {
+        min-width: 100%;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+    }
+
+    .small-heading {
+        font-size: 0.9em;
+    }
+
+    .details-text {
+        font-size: 1em;
+    }
+
+    .details-image {
+        max-height: 40vh;
+    }
+
     /*------------------------------------------*/
     /*    Testimonials
     /*------------------------------------------*/
@@ -1303,6 +1312,22 @@
     .dashboard .hero-section{
         padding-top: 25%;
     }
+
+    .section-title {
+        font-size: 1.2em;
+    }
+
+    .small-heading {
+        font-size: 0.8em;
+    }
+
+    .details-text {
+        font-size: 0.9em;
+    }
+
+    .details-image {
+        max-height: 30vh;
+    }
     
        	
 }
@@ -1385,6 +1410,22 @@
 
     .description-text {
         font-size: 0.75em;
+    }
+
+    .section-title {
+        font-size: 1em;
+    }
+
+    .small-heading {
+        font-size: 0.7em;
+    }
+
+    .details-text {
+        font-size: 0.8em;
+    }
+
+    .details-image {
+        max-height: 20vh;
     }
 
     /*------------------------------------------*/
