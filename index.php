@@ -3,13 +3,6 @@ $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $url = isset($requestUri) ? $requestUri : '/';
 $routes = [
     '/' => 'home.php',
-    // '/signup' => 'signup.php',
-    '/about' => 'about.php',
-    '/pricing'=> 'pricing.php',
-    '/features'=>'features.php',
-    '/testimonials'=>'testimonials.php',
-    '/faqs'=>'faqs.php',
-    '/contacts'=>'contacts.php',
 ];
 
 if (array_key_exists($url, $routes)) {

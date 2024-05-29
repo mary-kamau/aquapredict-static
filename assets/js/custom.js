@@ -137,73 +137,18 @@ $(document).ready(function() {
 
 
 "use strict";
-
-let sectionCount = 0;
+$('.details-section').hide();
 
 $('.card-link').click(function(event) {
     event.preventDefault(); // Prevent default link behavior
 
-    console.log('Read More clicked'); // For debugging
+    // Hide all detail sections
+    $('.details-section').slideUp();
 
-    const description = $(this).data('description');
-    const backgroundImage = $(this).data('bg');
-
-    sectionCount++;
-    const isOdd = sectionCount % 2 !== 0;
-
-    // Determine the order of elements based on odd/even status
-    const imageFirst = isOdd ? 'details-image' : 'details-text';
-    const textFirst = isOdd ? 'details-text' : 'details-image';
-
-    // Create new section with the details
-    const detailsSection = `
-        <section class="details-section ${isOdd ? 'odd' : 'even'}">
-            <div class="details-content">
-                <div class="${imageFirst}">
-                    <img src="${backgroundImage}" alt="Details Image">
-                </div>
-                <div class="${textFirst}">
-                    <p class="description-text">${description}</p>
-                </div>
-            </div>
-        </section>
-    `;
-
-    // Append new section to the container and slide it down
-    $('#details-section-container').html(detailsSection).slideDown();
+    // Show the target detail section
+    const target = $(this).data('target');
+    $(target).slideDown();
 });
-
-
-
-// Carousel logic
-// const $carousel = $('.carousel');
-// const $items = $('.carousel-item');
-// const totalItems = $items.length / 5 ;
-
-
-// let currentIndex = 0;
-// function showNextItem() {
-//     // currentIndex = (currentIndex + 1) % totalItems;
-//     // if (currentIndex === totalItems - 1) {
-//     //     updateCarousel();
-//     //     currentIndex = 0;
-//     //     return; // Exit the function early to prevent additional interval delay
-//     // }
-//     // updateCarousel();
-
-//     currentIndex = (currentIndex + 1) % totalItems;
-//     updateCarousel();
-
-// }
-
-// function updateCarousel() {
-//     const offset = -currentIndex * 100;
-//     $carousel.css('transform', `translateX(${offset}%)`);
-// }
-
-// setInterval(showNextItem, 3000); // Change slide every 3 second
-
-
 
 const $carousel = $('.carousel');
 const $items = $('.carousel-item');
@@ -221,14 +166,14 @@ function getVisibleItemsCount() {
 function updateCarousel() {
     const visibleItems = getVisibleItemsCount();
     const totalItems = Math.ceil($items.length / visibleItems);
-    const offset = -currentIndex * 100 / visibleItems;
+    const offset = -currentIndex * 100;
     $carousel.css('transform', `translateX(${offset}%)`);
 }
 
 function showNextItem() {
     const visibleItems = getVisibleItemsCount();
-    const totalItems = Math.ceil($items.length / visibleItems);
-    currentIndex = (currentIndex + 1) % totalItems;
+    const totalSets = Math.ceil($items.length / visibleItems);
+    currentIndex = (currentIndex + 1) % totalSets;
     updateCarousel();
 }
 
@@ -237,6 +182,8 @@ $(window).resize(updateCarousel);
 setInterval(showNextItem, 3000); // Change slide every 3 seconds
 
 updateCarousel();
+
+
 
 
 

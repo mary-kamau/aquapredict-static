@@ -15,137 +15,7 @@
     .industry-card {
         max-width: 300px;
     }
-    /* ==========================================================================
-   08. FEATURES TAB
-   ========================================================================== */ 
-   /* .it-solutions-section {
-       padding: 20px;
-       background-color: #111;
-       color: #fff;
-       text-align: center;
-   }
-   
-   .section-header {
-       margin-bottom: 20px;
-   }
-   
-   .small-heading {
-       font-size: 1em;
-       text-transform: uppercase;
-       margin-bottom: 0.5em;
-   }
-   
-   .highlight {
-       color: #00bcd4;
-   }
-   
-   .section-title {
-       font-size: 2em;
-       margin: 0;
-   }
-   
-   .carousel-container {
-       overflow: hidden;
-       max-width: 1200px;
-       margin: 0 auto;
-   }
-   
-   .carousel {
-       display: flex;
-       transition: transform 0.5s ease-in-out;
-   }
-   
-   .carousel-item {
-       min-width: calc(100% / 5);
-   }
-   
-   .it-solution-card {
-       background: #222;
-       padding: 20px;
-       border-radius: 10px;
-       margin: 10px;
-       text-align: center;
-       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   }
-   
-   .card-icon {
-       font-size: 2em;
-       margin-bottom: 10px;
-       color: #00bcd4;
-       background: rgba(0, 188, 212, 0.1);
-       border-radius: 50%;
-       width: 50px;
-       height: 50px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       margin: 0 auto;
-   }
-   
-   .card-icon-img img {
-       max-width: 100px;
-       margin-bottom: 20px;
-   }
-   
-   .card-link {
-       color: #00bcd4;
-       text-decoration: none;
-       font-weight: bold;
-   }
-   
-   .card-link:hover {
-       text-decoration: underline;
-   }
-   
-   #details-section-container {
-       display: none;
-   }
-   
-   .details-section {
-       height: 60vh;
-       color: #fff;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       padding: 20px;
-       text-align: center;
-   }
-   
-   .details-content {
-       display: flex;
-       align-items: center;
-       width: 100%;
-       max-width: 1200px;
-       padding: 20px;
-       box-sizing: border-box;
-   }
-   
-   .details-section.odd .details-content {
-       flex-direction: row-reverse;
-   }
-   
-   .details-text {
-       flex: 1;
-       padding: 20px;
-   }
-   
-   .details-image {
-       flex: 1;
-       max-width: 100%;
-       padding: 50px;
-   }
-   
-   .details-image img {
-       width: 100%;
-       height: auto;
-       border-radius: 10px;
-   }
-   
-   .description-text {
-       color: #000000;
-       font-size: 1.2em;
-       line-height: 1.5;
-   } */
+
     /*------------------------------------------*/
     /*   Testimonial
     /*------------------------------------------*/
@@ -391,7 +261,7 @@
     .footer{
         height:100vh;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         padding:20px;
     }
 
@@ -828,7 +698,7 @@
     /*------------------------------------------*/
     .footer {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 0px;
         padding-left: 100px;
     }
@@ -1104,7 +974,11 @@
     .hero-app .hero-section .btn{
         margin-top: 5px;
     }
-    
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
 
 }
 
