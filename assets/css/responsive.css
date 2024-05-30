@@ -1,6 +1,6 @@
 /* ==========================================================================
    RESPONSIVE STYLES
- ========================================================================== */ 
+ ========================================================================== */
 
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
@@ -8,265 +8,277 @@
 /* ------------------------------------------------------------------------ */
 
 @media (min-width: 1200px) {
-    .industries-container {
-        flex-wrap: nowrap;
-    }
+  .industries-container {
+    flex-wrap: nowrap;
+  }
 
-    .industry-card {
-        max-width: 300px;
-    }
+  .industry-card {
+    max-width: 300px;
+  }
 
+  /*------------------------------------------*/
+  /*   Testimonial
     /*------------------------------------------*/
-    /*   Testimonial
-    /*------------------------------------------*/
-    .section-title {
-        text-align: center;
-        font-size: 2em;
-        margin-bottom: 1em;
-    }
-    
-    .section-title .highlight {
-        color: #00bcd4;
-    }
+  .section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
 
-    .testimonial-section {
-        padding: 20px;
-        background-color: #f9f9f9;
-    }
-    
-    .testimonials-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2em;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1em;
-    }
-    
-    .testimonial {
-        background: #fff;
-        padding: 2em;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
-    
-    .testimonial-content .quote {
-        font-size: 1em;
-        color: #666;
-        margin-bottom: 1em;
-    }
-    
-    .rating {
-        font-size: 1.5em;
-        color: #f39c12; /* Star color */
-    }
-    
-    .testimonial-author {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1em;
-    }
-    
-    .testimonial-author img {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin-bottom: 0.5em;
-    }
-    
-    .author-info {
-        text-align: center;
-    }
-    
-    .author-name {
-        font-weight: bold;
-    }
-    
-    .author-title {
-        color: #00bcd4;
-    }
+  .section-title .highlight {
+    color: #00bcd4;
+  }
 
-    /*------------------------------------------*/
-    /*   Footer
-    /*------------------------------------------*/
-    .footer{
-        display: grid;
-        grid-template-columns: 20vw 20vw 20vw 20vw;
-        column-gap: 50px;
-        height:50vh;
-        padding:20px;
-        padding-left: 100px
-    }
+  .testimonial-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
 
-    .footer-item .text-logo {
-        margin-bottom:100px;
-    }
+  .testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+
+  .testimonial {
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .testimonial-content .quote {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1em;
+  }
+
+  .rating {
+    font-size: 1.5em;
+    color: #f39c12; /* Star color */
+  }
+
+  .testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+  }
+
+  .testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+  }
+
+  .author-info {
+    text-align: center;
+  }
+
+  .author-name {
+    font-weight: bold;
+  }
+
+  .author-title {
+    color: #00bcd4;
+  }
+
+  /*------------------------------------------*/
+  /*   Footer
+    /*------------------------------------------*/
+  .footer {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    column-gap: 50px;
+    height: 50vh;
+    padding: 20px;
+    padding-left: 100px;
+  }
+
+  .footer-item .text-logo {
+    margin-bottom: 100px;
+  }
 }
 @media (max-width: 1199px) {
-
+  /*------------------------------------------*/
+  /*    General Fixes
     /*------------------------------------------*/
-    /*    General Fixes
+  .btn {
+    margin-bottom: 10px;
+  }
+
+  /*------------------------------------------*/
+  /*    Overlay
     /*------------------------------------------*/
-    .btn{
-        margin-bottom: 10px;
-    }
+  .header .overlay {
+    height: 650px;
+  }
 
+  /*------------------------------------------*/
+  /*   Showcase Video Button
     /*------------------------------------------*/
-    /*    Overlay
+  .showcase .video-player {
+    left: 53%;
+  }
+
+  /*------------------------------------------*/
+  /*   Charts
     /*------------------------------------------*/
-    .header .overlay{
-        height: 650px;
-    }
+  #canvas-holder {
+    left: 18%;
+  }
 
+  #canvas2-holder {
+    display: none;
+  }
+
+  .signup-handwritten {
+    right: -30px;
+  }
+
+  .doughnut-box {
+    margin-bottom: 146px;
+  }
+
+  .carousel-item {
+    min-width: calc(100% / 4);
+  }
+
+  .section-title {
+    font-size: 2em;
+  }
+
+  .industry-card {
+    max-width: 300px;
+  }
+
+  .industry-card h3 {
+    font-size: 1.4em;
+  }
+
+  .industry-card p {
+    font-size: 0.95em;
+  }
+
+  .contact-info {
+    font-size: 1.1em;
+  }
+
+  .description-text {
+    font-size: 1.1em;
+  }
+
+  .details-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .details-section.layout-1 .details-content,
+  .details-section.layout-2 .details-content {
+    flex-direction: column;
+  }
+
+  .details-image, .details-text {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /*------------------------------------------*/
+  /*   Testimonial
     /*------------------------------------------*/
-    /*   Showcase Video Button
+  .section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .section-title .highlight {
+    color: #00bcd4;
+  }
+
+  .testimonial-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+
+  .testimonial {
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .testimonial-content .quote {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1em;
+  }
+
+  .rating {
+    font-size: 1.5em;
+    color: #f39c12; /* Star color */
+  }
+
+  .testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+  }
+
+  .testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+  }
+
+  .author-info {
+    text-align: center;
+  }
+
+  .author-name {
+    font-weight: bold;
+  }
+
+  .author-title {
+    color: #00bcd4; /* Adjust color as needed */
+  }
+
+  /*------------------------------------------*/
+  /*   Newsletter
     /*------------------------------------------*/
-    .showcase .video-player{
-        left: 53%;
-    }
+  .newsletter .getnewsletter {
+    width: 120px;
+  }
 
+  /*------------------------------------------*/
+  /*   Footer
     /*------------------------------------------*/
-    /*   Charts
-    /*------------------------------------------*/
-    #canvas-holder{
-        left:18%;
-    }
+  .footer {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+  }
 
-    #canvas2-holder{
-        display:none;
-    }
-
-    .signup-handwritten {
-        right: -30px;
-    }
-
-    .doughnut-box {
-        margin-bottom: 146px;
-    }
-
-    .carousel-item {
-        min-width: calc(100% / 4);
-    }
-
-    .section-title {
-        font-size: 2em;
-    }
-
-
-    .industry-card {
-        max-width: 300px;
-    }
-
-    .industry-card h3 {
-        font-size: 1.4em;
-    }
-
-    .industry-card p {
-        font-size: 0.95em;
-    }
-
-    .contact-info {
-        font-size: 1.1em;
-    }
-
-    .description-text {
-        font-size: 1.1em;
-    }
-
-    /*------------------------------------------*/
-    /*   Testimonial
-    /*------------------------------------------*/
-    .section-title {
-        text-align: center;
-        font-size: 2em;
-        margin-bottom: 1em;
-    }
-    
-    .section-title .highlight {
-        color: #00bcd4;
-    }
-
-    .testimonial-section {
-        padding: 20px;
-        background-color: #f9f9f9;
-    }
-    
-    .testimonials-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2em;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1em;
-    }
-    
-    .testimonial {
-        background: #fff;
-        padding: 2em;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
-    
-    .testimonial-content .quote {
-        font-size: 1em;
-        color: #666;
-        margin-bottom: 1em;
-    }
-    
-    .rating {
-        font-size: 1.5em;
-        color: #f39c12; /* Star color */
-    }
-    
-    .testimonial-author {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1em;
-    }
-    
-    .testimonial-author img {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin-bottom: 0.5em;
-    }
-    
-    .author-info {
-        text-align: center;
-    }
-    
-    .author-name {
-        font-weight: bold;
-    }
-    
-    .author-title {
-        color: #00bcd4; /* Adjust color as needed */
-    }
-    
-
-    /*------------------------------------------*/
-    /*   Newsletter
-    /*------------------------------------------*/
-    .newsletter .getnewsletter{
-        width: 120px;
-    }
-    
-    /*------------------------------------------*/
-    /*   Footer
-    /*------------------------------------------*/
-    .footer{
-        height:100vh;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        padding:20px;
-    }
-
-
-    /* .footer .row {
+  /* .footer .row {
         padding: 10px;
         margin-top: 0;
         background-color: #2196F3;
@@ -276,112 +288,123 @@
         align-items: center;
     } */
 
-    /* .footer-cta .btn {
+  /* .footer-cta .btn {
         margin-left: 0;
         margin-top: 10px;
     } */
 
+  /*------------------------------------------*/
+  /*   Header App
     /*------------------------------------------*/
-    /*   Header App
-    /*------------------------------------------*/
-    .hero-app .hero-section{
-        padding-top: 10%;
-    }
+  .hero-app .hero-section {
+    padding-top: 10%;
+  }
 
-    .carousel-item {
-        min-width: calc(100% / 4);
-    }
+  .carousel-item {
+    min-width: calc(100% / 4);
+  }
 }
-
 
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 @media (min-width: 992px) {
+  /*-------------------------------------------------------------*/
+  /*    Set Container Width at 970 also for Large Devices Desktop
     /*-------------------------------------------------------------*/
-    /*    Set Container Width at 970 also for Large Devices Desktop
-    /*-------------------------------------------------------------*/
-    .container .grid-md{
-        margin:0 auto;
-        width: 970px;
-    }
+  .container .grid-md {
+    margin: 0 auto;
+    width: 970px;
+  }
 
-    .carousel-item {
-        min-width: calc(100% / 3);
-    }
+  .carousel-item {
+    min-width: calc(100% / 3);
+  }
 
-    .industry-card {
-        max-width: 300px;
-    }
+  .industry-card {
+    max-width: 300px;
+  }
 
-    .industry-card h3 {
-        font-size: 1.4em;
-    }
+  .industry-card h3 {
+    font-size: 1.4em;
+  }
 
-    .industry-card p {
-        font-size: 0.95em;
-    }
+  .industry-card p {
+    font-size: 0.95em;
+  }
 
-    .contact-info {
-        font-size: 1.1em;
-    }
+  .contact-info {
+    font-size: 1.1em;
+  }
 
+  .details-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .details-section.layout-1 .details-content {
+    flex-direction: row;
+  }
+
+  .details-section.layout-2 .details-content {
+    flex-direction: row-reverse;
+  }
+
+  /*------------------------------------------*/
+  /*   Testimonial
     /*------------------------------------------*/
-    /*   Testimonial
+
+  .testimonials-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+  }
+
+  .section-title {
+    font-size: 2.5em;
+  }
+
+  .testimonial {
+    padding: 2.5em;
+  }
+
+  .testimonial-content .quote {
+    font-size: 1.1em;
+  }
+
+  .rating {
+    font-size: 1.6em;
+  }
+
+  .testimonial-author img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .author-name {
+    font-size: 1.1em;
+  }
+
+  .author-title {
+    font-size: 1em;
+  }
+
+  /*------------------------------------------*/
+  /*   Footer
     /*------------------------------------------*/
+  .footer {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    column-gap: 50px;
+    height: 50vh;
+    padding: 20px;
+    /* padding-left: 100px */
+  }
 
-    .testimonials-container {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2em;
-    }
-
-    .section-title {
-        font-size: 2.5em;
-    }
-
-    .testimonial {
-        padding: 2.5em;
-    }
-
-    .testimonial-content .quote {
-        font-size: 1.1em;
-    }
-
-    .rating {
-        font-size: 1.6em;
-    }
-
-    .testimonial-author img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .author-name {
-        font-size: 1.1em;
-    }
-
-    .author-title {
-        font-size: 1em;
-    }
-
-    /*------------------------------------------*/
-    /*   Footer
-    /*------------------------------------------*/
-    .footer{
-        display: grid;
-        grid-template-columns: 20vw 20vw 20vw 20vw;
-        column-gap: 50px;
-        height:50vh;
-        padding:20px;
-        /* padding-left: 100px */
-    }
-
-    .footer-item .text-logo {
-        margin-bottom:100px;
-    }
+  .footer-item .text-logo {
+    margin-bottom: 100px;
+  }
 }
-
 
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
@@ -389,1035 +412,1083 @@
 /* ------------------------------------------------------------------------ */
 
 @media (max-width: 991px) {
-
+  /*-----------------------------------------------------------*/
+  /*    Show Navbar Toggle and Hide Navbar Menu, Bootstrap Fixes
     /*-----------------------------------------------------------*/
-    /*    Show Navbar Toggle and Hide Navbar Menu, Bootstrap Fixes
-    /*-----------------------------------------------------------*/
-    .navbar-fixed-top {
-        background: #002D62;
-        /* background: rgba(20, 26, 54, 0.95); */
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+  .navbar-fixed-top {
+    background: #002d62;
+    /* background: rgba(20, 26, 54, 0.95); */
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
-    .navbar-header {
-        float: none;
-    }
+  .navbar-header {
+    float: none;
+  }
 
-    .navbar-toggle {
-        display: block;
-    }
+  .navbar-toggle {
+    display: block;
+  }
 
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: none;
-    }
-    
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: none;
+  }
 
-    .navbar-collapse.collapse.in {  
-        display: block!important; 
-    }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
 
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
-    }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
 
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
-    }
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+  }
 
-    .navbar-nav>li {
-        float: none;
-    }
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+  }
 
-    .navbar-nav>li>a {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        display:inline-block;
-    }
+  .navbar-nav > li {
+    float: none;
+  }
 
-    .navbar-nav>li>a.btn-nav {
-        margin: 3px 0 5px 15px;
-        padding: 5px;
-    }
+  .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+  }
 
+  .navbar-nav > li > a.btn-nav {
+    margin: 3px 0 5px 15px;
+    padding: 5px;
+  }
+
+  /*------------------------------------------*/
+  /*    Header Overlay and Hero Section
     /*------------------------------------------*/
-    /*    Header Overlay and Hero Section
+  .header .overlay {
+    height: 580px;
+  }
+
+  /*------------------------------------------*/
+  /*   Image with Action
     /*------------------------------------------*/
-    .header .overlay{
-        height: 580px;
-    }
+  .img-with-action {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-    /*------------------------------------------*/
-    /*   Image with Action
-    /*------------------------------------------*/
-    .img-with-action{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+  .industries-container {
+    flex-direction: column;
+  }
 
-    .industries-container {
-        flex-direction: column;
-    }
+  .industry-card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
 
-    .industry-card {
-        max-width: 100%;
-        margin: 10px 0;
-    }
+  .industry-card h3 {
+    font-size: 1.3em;
+  }
 
-    .industry-card h3 {
-        font-size: 1.3em;
-    }
+  .industry-card p {
+    font-size: 0.9em;
+  }
 
-    .industry-card p {
-        font-size: 0.9em;
-    }
+  .contact-info {
+    font-size: 1em;
+  }
 
-    .contact-info {
-        font-size: 1em;
-    }
-
-    /*------------------------------------------*/
-    /*   Features Tab
+  /*------------------------------------------*/
+  /*   Features Tab
     /*------------------------------------------*/
 
-    .carousel-item {
-        min-width: calc(100% / 2);
-    }
+  .carousel-item {
+    min-width: calc(100% / 2);
+  }
 
-    .details-section {
-        height: auto;
-        flex-direction: column;
-    }
+  .details-content {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .details-content {
-        flex-direction: column;
-    }
+  .details-section.layout-1 .details-content,
+  .details-section.layout-2 .details-content {
+    flex-direction: column;
+  }
 
-    .details-text,
-    .details-image {
-        width: 100%;
-        padding: 10px;
-    }
+  .details-image, .details-text {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
 
-
+  /*------------------------------------------*/
+  /*   Testimonials
     /*------------------------------------------*/
-    /*   Testimonials
+  .testimonials-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+
+  .section-title {
+    font-size: 1.75em;
+  }
+
+  .testimonial {
+    padding: 1.5em;
+  }
+
+  .testimonial-content .quote {
+    font-size: 0.95em;
+  }
+
+  .rating {
+    font-size: 1.3em;
+  }
+
+  .testimonial-author img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .author-name {
+    font-size: 1em;
+  }
+
+  .author-title {
+    font-size: 0.95em;
+  }
+
+  /*------------------------------------------*/
+  /*   Newsletter
     /*------------------------------------------*/
-    .testimonials-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5em;
-    }
+  .newsletter .table {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
 
-    .section-title {
-        font-size: 1.75em;
-    }
+  .newsletter .table:last-child {
+    margin-bottom: 10px;
+  }
 
-    .testimonial {
-        padding: 1.5em;
-    }
+  .newsletter .table-row {
+    display: block;
+  }
 
-    .testimonial-content .quote {
-        font-size: 0.95em;
-    }
+  .newsletter .table-cell {
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+  }
 
-    .rating {
-        font-size: 1.3em;
-    }
+  .newsletter .social-list > li {
+    display: inline-block;
+    float: none;
+  }
 
-    .testimonial-author img {
-        width: 55px;
-        height: 55px;
-    }
+  .newsletter .input-group {
+    width: 60%;
+    margin: 0 auto;
+  }
 
-    .author-name {
-        font-size: 1em;
-    }
-
-    .author-title {
-        font-size: 0.95em;
-    }
-    
+  /*------------------------------------------*/
+  /*   Charts
     /*------------------------------------------*/
-    /*   Newsletter
+  #canvas-holder {
+    display: none;
+  }
+
+  .line-canvas {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .charts p.large {
+    margin-bottom: 50px;
+  }
+
+  .doughnut-box {
+    margin-bottom: 70px;
+  }
+
+  /*------------------------------------------*/
+  /*    Sign-Up Divider
     /*------------------------------------------*/
-    .newsletter .table{
-        margin-top: 25px;
-        margin-bottom: 15px;
-        text-align: center;
-    }
+  .signup-handwritten {
+    right: 9px;
+    bottom: -200px;
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
 
-    .newsletter .table:last-child{
-        margin-bottom: 10px;
-    }
+  .signup-handwritten:before {
+    left: 75px;
+    top: -48px;
+    -moz-transform: rotate(105deg);
+    -o-transform: rotate(105deg);
+    -ms-transform: rotate(105deg);
+    -webkit-transform: rotate(105deg);
+    transform: rotate(105deg);
+  }
 
-    .newsletter .table-row{
-        display:block;
-    }
+  .signup-divider .form-group {
+    width: 30%;
+  }
 
-    .newsletter .table-cell{
-        width: 100%;
-        display:block;
-        padding-bottom: 10px;
-    }
-
-    .newsletter .social-list>li{
-        display: inline-block;
-        float: none;
-    }
-
-    .newsletter .input-group{
-        width: 60%;
-        margin: 0 auto;
-    }
-
+  /*------------------------------------------*/
+  /*    Pricing
     /*------------------------------------------*/
-    /*   Charts
+  .pricing-tab {
+    padding: 50px 27px 30px;
+  }
+
+  .pricing-tab h4 {
+    margin: 0 0 30px;
+  }
+
+  /*------------------------------------------*/
+  /*    Team
     /*------------------------------------------*/
-    #canvas-holder{
-        display:none;
-    }
+  .team-img .img-icons span i {
+    text-align: center;
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+    padding: 20% 5%;
+  }
 
-    .line-canvas{
-        margin:0 auto;
-        width:70%;
-    }
-
-    .charts p.large{
-        margin-bottom: 50px;
-    }
-
-    .doughnut-box {
-        margin-bottom: 70px;
-    }
-
+  /*------------------------------------------*/
+  /*    Mobile-Download
     /*------------------------------------------*/
-    /*    Sign-Up Divider
-    /*------------------------------------------*/
-    .signup-handwritten {
-        right: 9px;
-        bottom: -200px;
-        -moz-transform: rotate(-5deg);
-        -o-transform: rotate(-5deg);
-        -ms-transform: rotate(-5deg);
-        -webkit-transform: rotate(-5deg);
-        transform: rotate(-5deg);
-    }
+  .mobile-download .right-features {
+    margin-top: 70px;
+  }
 
-    .signup-handwritten:before{
-        left: 75px;
-        top: -48px;
-        -moz-transform: rotate(105deg);
-        -o-transform: rotate(105deg);
-        -ms-transform: rotate(105deg);
-        -webkit-transform: rotate(105deg);
-        transform: rotate(105deg);
-    }
-
-    .signup-divider .form-group{
-        width: 30%;
-    }
-
+  /*------------------------------------------*/
+  /*   Footer
     /*------------------------------------------*/
-    /*    Pricing
-    /*------------------------------------------*/
-    .pricing-tab {
-        padding: 50px 27px 30px;
-    }
+  .footer {
+    text-align: center;
+  }
 
-    .pricing-tab h4 {
-        margin: 0 0 30px;
-    }
+  .footer .footer-nav li:first-of-type {
+    margin-left: 0;
+  }
 
-    /*------------------------------------------*/
-    /*    Team
-    /*------------------------------------------*/
-    .team-img .img-icons span i{
-        text-align: center;
-        font-size: 35px;
-        width: 35px;
-        height: 35px;
-        padding: 20% 5%;
-    }
-    
-    /*------------------------------------------*/
-    /*    Mobile-Download
-    /*------------------------------------------*/
-    .mobile-download .right-features {
-        margin-top: 70px;
-    }
+  .footer-copy {
+    margin-top: 20px;
+  }
 
+  .footer-nav {
+    margin-top: 75px;
+  }
+
+  .footer h5 {
+    margin-top: 60px;
+  }
+
+  /*------------------------------------------*/
+  /*   Header App
     /*------------------------------------------*/
-    /*   Footer
+  .hero-app .hero-section {
+    padding-top: 0;
+  }
+
+  .hero-app .hero-section .btn-box {
+    display: none;
+  }
+
+  /*------------------------------------------*/
+  /*   Header Dashboard
     /*------------------------------------------*/
-    .footer {
-        text-align: center;
-    }
+  .dashboard .hero-section {
+    padding-top: 20%;
+  }
 
-    .footer .footer-nav li:first-of-type{
-        margin-left:0;
-    }
-
-    .footer-copy{
-        margin-top:20px;
-    }
-
-    .footer-nav{
-        margin-top: 75px;
-    }
-
-    .footer h5 {
-        margin-top: 60px;
-    }
-
+  /*------------------------------------------*/
+  /*   Footer
     /*------------------------------------------*/
-    /*   Header App
-    /*------------------------------------------*/
-    .hero-app .hero-section{
-        padding-top: 0;
-    }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0px;
+    padding-left: 100px;
+  }
 
-    .hero-app .hero-section .btn-box{
-        display: none;
-    }
-
-    /*------------------------------------------*/
-    /*   Header Dashboard
-    /*------------------------------------------*/
-    .dashboard .hero-section{
-        padding-top:20%;
-    }
-
-    /*------------------------------------------*/
-    /*   Footer
-    /*------------------------------------------*/
-    .footer {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 0px;
-        padding-left: 100px;
-    }
-    
-    /* Style for each box */
-    .footer-item {
-        padding: 20px;
-    }
-
+  /* Style for each box */
+  .footer-item {
+    padding: 20px;
+  }
 }
-
 
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 @media (max-width: 767px) {
-    
-    /*----------------------------------------------------------------------*/
-    /*    IMPORTANT!!! DISABLE WOW ANIMATION ON SMALL SCREENS (<768px)
+  /*----------------------------------------------------------------------*/
+  /*    IMPORTANT!!! DISABLE WOW ANIMATION ON SMALL SCREENS (<768px)
     /*-----------------------------------------------------------------------*/
-    .wow {
-      visibility: visible !important;
-      -webkit-animation: none !important;
-         -moz-animation: none !important;
-           -o-animation: none !important;
-          -ms-animation: none !important;
-              animation: none !important;
-    }
+  .wow {
+    visibility: visible !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
 
+  /*------------------------------------------*/
+  /*    Typography
     /*------------------------------------------*/
-    /*    Typography
+  h2 {
+    text-align: left;
+  }
+
+  .large {
+    text-align: left;
+  }
+
+  /*------------------------------------------*/
+  /*   About - Intro Features
     /*------------------------------------------*/
-    h2 {
-        text-align: left;
-    }
+  .intro-features {
+    text-align: left;
+  }
 
-    .large {
-        text-align: left;
-    }
+  .intro-features .intro-content {
+    margin-bottom: 50px;
+  }
 
-    /*------------------------------------------*/
-    /*   About - Intro Features
-    /*------------------------------------------*/
-    .intro-features{
-        text-align: left;
-    }
+  .intro-features .intro-content:last-child {
+    margin-bottom: 0;
+  }
 
-    .intro-features .intro-content{
-        margin-bottom: 50px;
-    }
+  .intro-content .icon-lg {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 90px;
+  }
 
-    .intro-features .intro-content:last-child{
-        margin-bottom: 0;
-    }
+  .intro-content h4 {
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+  }
 
-    .intro-content .icon-lg{
-        display:inline-block;
-        margin-bottom: 20px;
-        width: 90px;
-    }
+  .industries-container {
+    flex-direction: column;
+  }
 
-    .intro-content h4{
-        display: inline-block;
-        position: relative;
-        bottom: 20px;
-    }
+  .industry-card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
 
-    .industries-container {
-        flex-direction: column;
-    }
+  .industry-card h3 {
+    font-size: 1.2em;
+  }
 
-    .industry-card {
-        max-width: 100%;
-        margin: 10px 0;
-    }
+  .industry-card p {
+    font-size: 0.85em;
+  }
 
-    .industry-card h3 {
-        font-size: 1.2em;
-    }
-
-    .industry-card p {
-        font-size: 0.85em;
-    }
-
-    .contact-info {
-        font-size: 0.95em;
-    }
-    /*------------------------------------------*/
-    /*  Features Tab
-    /*------------------------------------------*/
-
-    .carousel-item {
-        min-width: calc(100% / 2);
-    }
-    .section-title {
-        font-size: 1.5em;
-    }
-
-    .description-text {
-        font-size: 0.9em;
-    }
-
-
-    /*------------------------------------------*/
-    /*   Newsletter
-    /*------------------------------------------*/
-    .newsletter .input-group{
-        width: 80%;
-        margin: 0;
-    }
-
-    .newsletter .table {
-        text-align: left;
-    }
-    
-    /*------------------------------------------*/
-    /*   Signup-Divider
-    /*------------------------------------------*/
-    .signup-handwritten {
-        display:none;
-    }
-
-    /*------------------------------------------*/
-    /*    Pricing
-    /*------------------------------------------*/
-    .pricing-tab {
-        max-width: 400px;
-        margin: 0 auto;
-        margin-top: 30px;
-    }
-
-    .pricing .large {
-        margin-bottom: 0;
-    }
-
-    /*------------------------------------------*/
-    /*    Team
-    /*------------------------------------------*/
-    .team .team-box{
-        margin-bottom: 50px;
-    }
-
-    .team h4{
-        margin-bottom: 10px;
-    }
-
-    .team .team-img{
-        width: 30%;
-        float: left;
-        clear:both;
-        margin-top:0;
-        margin-right: 10px;
-    }
-
-    .team .team-bio {
-        border-bottom: 1px solid transparent;
-    }
-
-    .team .team-url{
-        display: none;
-    }
-
-    .carousel-item {
-        min-width: 100%;
-    }
-
-    .section-title {
-        font-size: 1.5em;
-    }
-
-    .small-heading {
-        font-size: 0.9em;
-    }
-
-    .details-text {
-        font-size: 1em;
-    }
-
-    .details-image {
-        max-height: 40vh;
-    }
-
-    /*------------------------------------------*/
-    /*    Testimonials
+  .contact-info {
+    font-size: 0.95em;
+  }
+  /*------------------------------------------*/
+  /*  Features Tab
     /*------------------------------------------*/
 
-    .testimonials-container {
-        grid-template-columns: 1fr;
-        gap: 1em;
-    }
+  .carousel-item {
+    min-width: calc(100% / 2);
+  }
+  .section-title {
+    font-size: 1.5em;
+  }
 
-    .section-title {
-        font-size: 1.5em;
-    }
+  .description-text {
+    font-size: 0.9em;
+  }
 
-    .testimonial {
-        padding: 1em;
-    }
+  .details-content {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .testimonial-content .quote {
-        font-size: 0.9em;
-    }
+  .details-section.layout-1 .details-content,
+  .details-section.layout-2 .details-content {
+    flex-direction: column;
+  }
 
-    .rating {
-        font-size: 1.2em;
-    }
+  .details-image, .details-text {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
 
-    .testimonial-author img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .author-name {
-        font-size: 0.95em;
-    }
-
-    .author-title {
-        font-size: 0.9em;
-    }
-
+  /*------------------------------------------*/
+  /*   Newsletter
     /*------------------------------------------*/
-    /*    Mobile-Download
+  .newsletter .input-group {
+    width: 80%;
+    margin: 0;
+  }
+
+  .newsletter .table {
+    text-align: left;
+  }
+
+  /*------------------------------------------*/
+  /*   Signup-Divider
     /*------------------------------------------*/
-    .mobile-download h3 {
-        margin-top: 0;
-    }
+  .signup-handwritten {
+    display: none;
+  }
 
-    .mobile-download .shot-container{
-        display:none;
-    }
-
-    .mobile-download .right-features {
-        display:none;
-    }
-
+  /*------------------------------------------*/
+  /*    Pricing
     /*------------------------------------------*/
-    /*    Footer
+  .pricing-tab {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .pricing .large {
+    margin-bottom: 0;
+  }
+
+  /*------------------------------------------*/
+  /*    Team
     /*------------------------------------------*/
-    .footer{
-        text-align: left;
-    }
+  .team .team-box {
+    margin-bottom: 50px;
+  }
 
-    .footer-nav{
-        display:none
-    }
+  .team h4 {
+    margin-bottom: 10px;
+  }
 
-    .footer-copy {
-        margin-top: 35px;
-        text-align: left;
-        padding-left: 15px;
-    }
+  .team .team-img {
+    width: 30%;
+    float: left;
+    clear: both;
+    margin-top: 0;
+    margin-right: 10px;
+  }
 
-    .tweet ul {
-        padding-left: 15px;
-    }
+  .team .team-bio {
+    border-bottom: 1px solid transparent;
+  }
 
+  .team .team-url {
+    display: none;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .small-heading {
+    font-size: 0.9em;
+  }
+
+  .details-section {
+    flex-direction: column;
+  }
+
+  .details-section .details-content {
+    flex-direction: column;
+  }
+
+  .details-section .details-image,
+  .details-section .details-text {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .details-section .details-image img {
+    max-width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+  }
+
+  /*------------------------------------------*/
+  /*    Testimonials
     /*------------------------------------------*/
-    /*    Fast-reg Fixes
+
+  .testimonials-container {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .testimonial {
+    padding: 1em;
+  }
+
+  .testimonial-content .quote {
+    font-size: 0.9em;
+  }
+
+  .rating {
+    font-size: 1.2em;
+  }
+
+  .testimonial-author img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .author-name {
+    font-size: 0.95em;
+  }
+
+  .author-title {
+    font-size: 0.9em;
+  }
+
+  /*------------------------------------------*/
+  /*    Mobile-Download
     /*------------------------------------------*/
-    .fast-reg .form-group{
-        width: 35%;
-        margin-bottom: 15px;
-    }
+  .mobile-download h3 {
+    margin-top: 0;
+  }
 
+  .mobile-download .shot-container {
+    display: none;
+  }
+
+  .mobile-download .right-features {
+    display: none;
+  }
+
+  /*------------------------------------------*/
+  /*    Footer
     /*------------------------------------------*/
-    /*   Header App
+  .footer {
+    text-align: left;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .footer-copy {
+    margin-top: 35px;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .tweet ul {
+    padding-left: 15px;
+  }
+
+  /*------------------------------------------*/
+  /*    Fast-reg Fixes
     /*------------------------------------------*/
-    .hero-app .hero-section .btn-box{
-        display: block;
-    }
+  .fast-reg .form-group {
+    width: 35%;
+    margin-bottom: 15px;
+  }
 
-    .hero-app .hero-section .btn{
-        margin-top: 5px;
-    }
+  /*------------------------------------------*/
+  /*   Header App
+    /*------------------------------------------*/
+  .hero-app .hero-section .btn-box {
+    display: block;
+  }
 
-    .footer {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
+  .hero-app .hero-section .btn {
+    margin-top: 5px;
+  }
 
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
 }
-
 
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 @media (max-width: 599px) {
-
+  /*------------------------------------------*/
+  /*   Typography
     /*------------------------------------------*/
-    /*   Typography
+  h1 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  h2 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  /*------------------------------------------*/
+  /*    Sign-Up Divider
     /*------------------------------------------*/
-    h1{
-        font-size: 42px;
-        line-height: 46px;
-    }
+  .signup-divider {
+    text-align: left;
+  }
 
-    h2{
-        font-size: 38px;
-        line-height: 42px;
-    }
+  .signup-divider .form-group {
+    width: 80%;
+    margin-bottom: 15px;
+    margin-right: 0;
+    padding-left: 15px;
+  }
 
-    h3{
-        font-size: 28px;
-        line-height: 32px;
-    }
+  .signup-divider .btn {
+    width: 78%;
+    margin-left: 15px;
+  }
 
+  /*------------------------------------------*/
+  /*   Showcase Video Button
     /*------------------------------------------*/
-    /*    Sign-Up Divider
+  .showcase .video-player {
+    left: 51%;
+    top: 36%;
+  }
+
+  .industries-container {
+    flex-direction: column;
+  }
+
+  .industry-card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .industry-card h3 {
+    font-size: 1.1em;
+  }
+
+  .industry-card p {
+    font-size: 0.8em;
+  }
+
+  .contact-info {
+    font-size: 0.9em;
+  }
+  .industries-container {
+    flex-direction: column;
+  }
+
+  .industry-card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .industry-card h3 {
+    font-size: 1.1em;
+  }
+
+  .industry-card p {
+    font-size: 0.8em;
+  }
+
+  .contact-info {
+    font-size: 0.9em;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+  }
+
+  .description-text {
+    font-size: 0.8em;
+  }
+
+  .details-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .details-section.layout-1 .details-content,
+  .details-section.layout-2 .details-content {
+    flex-direction: column;
+  }
+
+  .details-image, .details-text {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /*------------------------------------------*/
+  /*   Testimonial-Press Section
     /*------------------------------------------*/
-    .signup-divider{
-        text-align: left;
-    }
+  .section-title {
+    font-size: 1.4em;
+  }
 
-    .signup-divider .form-group{
-        width: 80%;
-        margin-bottom: 15px;
-        margin-right: 0;
-        padding-left: 15px;
-    }
+  .testimonial-content .quote {
+    font-size: 0.85em;
+  }
 
-    .signup-divider .btn{
-        width: 78%;
-        margin-left: 15px;
-    }
+  .rating {
+    font-size: 1.1em;
+  }
 
+  .testimonial-author img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .author-name {
+    font-size: 0.9em;
+  }
+
+  .author-title {
+    font-size: 0.85em;
+  }
+
+  .section-title {
+    font-size: 1.4em;
+  }
+
+  .it-solution-card {
+    padding: 15px;
+  }
+
+  .card-icon {
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+  }
+
+  .card-icon-img img {
+    max-width: 80px;
+  }
+
+  .card-link {
+    font-size: 0.9em;
+  }
+
+  /*------------------------------------------*/
+  /*    Team
     /*------------------------------------------*/
-    /*   Showcase Video Button
+  .team .team-box {
+    margin-bottom: 30px;
+  }
+
+  .team .team-box:last-child {
+    margin-bottom: 0;
+  }
+
+  .team h4 {
+    margin-bottom: 5px;
+  }
+
+  /*------------------------------------------*/
+  /*    Fast-reg Fixes
     /*------------------------------------------*/
-    .showcase .video-player{
-        left: 51%;
-        top: 36%;
-    }
+  .header.fast-reg-img .overlay {
+    height: 650px;
+  }
 
-    .industries-container {
-        flex-direction: column;
-    }
+  .fast-reg .form-group {
+    width: 80%;
+    margin-bottom: 10px;
+  }
 
-    .industry-card {
-        max-width: 100%;
-        margin: 10px 0;
-    }
+  .fast-reg .btn {
+    width: 80%;
+  }
 
-    .industry-card h3 {
-        font-size: 1.1em;
-    }
+  .fast-reg-box {
+    margin-top: 20px;
+  }
 
-    .industry-card p {
-        font-size: 0.8em;
-    }
-
-    .contact-info {
-        font-size: 0.9em;
-    }.industries-container {
-        flex-direction: column;
-    }
-
-    .industry-card {
-        max-width: 100%;
-        margin: 10px 0;
-    }
-
-    .industry-card h3 {
-        font-size: 1.1em;
-    }
-
-    .industry-card p {
-        font-size: 0.8em;
-    }
-
-    .contact-info {
-        font-size: 0.9em;
-    }
-
-    .carousel-item {
-        min-width: 100%;
-    }
-
-    .description-text {
-        font-size: 0.8em;
-    }
-
+  /*------------------------------------------*/
+  /*   Header Slider
     /*------------------------------------------*/
-    /*   Testimonial-Press Section
+  .slider-text {
+    display: inline;
+  }
+
+  .slider h1 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  /*------------------------------------------*/
+  /*   Header Dashboard
     /*------------------------------------------*/
-    .section-title {
-        font-size: 1.4em;
-    }
+  .dashboard .hero-section {
+    padding-top: 25%;
+  }
 
-    .testimonial-content .quote {
-        font-size: 0.85em;
-    }
+  .section-title {
+    font-size: 1.2em;
+  }
 
-    .rating {
-        font-size: 1.1em;
-    }
+  .small-heading {
+    font-size: 0.8em;
+  }
 
-    .testimonial-author img {
-        width: 45px;
-        height: 45px;
-    }
+  .details-text {
+    font-size: 0.9em;
+  }
 
-    .author-name {
-        font-size: 0.9em;
-    }
-
-    .author-title {
-        font-size: 0.85em;
-    }
-
-
-    .section-title {
-        font-size: 1.4em;
-    }
-
-    .it-solution-card {
-        padding: 15px;
-    }
-
-    .card-icon {
-        font-size: 1.5em;
-        width: 40px;
-        height: 40px;
-    }
-
-    .card-icon-img img {
-        max-width: 80px;
-    }
-
-    .card-link {
-        font-size: 0.9em;
-    }
-
-    /*------------------------------------------*/
-    /*    Team
-    /*------------------------------------------*/
-    .team .team-box{
-        margin-bottom: 30px;
-    }
-
-    .team .team-box:last-child{
-        margin-bottom: 0;
-    }
-
-    .team h4{
-        margin-bottom: 5px;
-    }
-
-    /*------------------------------------------*/
-    /*    Fast-reg Fixes
-    /*------------------------------------------*/
-    .header.fast-reg-img .overlay{
-        height: 650px;
-    }
-
-    .fast-reg .form-group{
-        width: 80%;
-        margin-bottom: 10px;
-    }
-
-    .fast-reg .btn{
-        width: 80%;
-    }
-
-    .fast-reg-box{
-        margin-top: 20px;
-    }
-
-    /*------------------------------------------*/
-    /*   Header Slider
-    /*------------------------------------------*/
-    .slider-text{
-        display: inline;
-    }
-
-    .slider h1{
-        font-size: 38px;
-        line-height: 42px;
-    }
-
-    /*------------------------------------------*/
-    /*   Header Dashboard
-    /*------------------------------------------*/
-    .dashboard .hero-section{
-        padding-top: 25%;
-    }
-
-    .section-title {
-        font-size: 1.2em;
-    }
-
-    .small-heading {
-        font-size: 0.8em;
-    }
-
-    .details-text {
-        font-size: 0.9em;
-    }
-
-    .details-image {
-        max-height: 30vh;
-    }
-    
-       	
+  .details-image {
+    max-height: 30vh;
+  }
 }
-
 
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 @media (max-width: 479px) {
-
+  /*------------------------------------------*/
+  /*   Typography
     /*------------------------------------------*/
-    /*   Typography
+  h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 37px;
+    line-height: 39px;
+  }
+
+  /*------------------------------------------*/
+  /*    Hero-Section
     /*------------------------------------------*/
-    h1{
-        font-size: 40px;
-        line-height: 44px;
-    }
+  .hero-section .btn {
+    margin-bottom: 5px;
+  }
 
-    h2{
-        font-size: 37px;
-        line-height: 39px;
-    }
-
+  /*------------------------------------------*/
+  /*    Login/Signup Modal
     /*------------------------------------------*/
-    /*    Hero-Section
+  .login .modal-dialog {
+    width: 80%;
+    margin: 90px auto;
+  }
+
+  /*------------------------------------------*/
+  /*   Showcase 
     /*------------------------------------------*/
-    .hero-section .btn{
-        margin-bottom: 5px;
-    }
+  .showcase .video-player {
+    left: 50%;
+    top: 32%;
+    font-size: 45px;
+  }
 
+  .showcase .img-box {
+    margin-top: 30px;
+  }
+
+  /*------------------------------------------*/
+  /*    Sign-Up Divider
     /*------------------------------------------*/
-    /*    Login/Signup Modal
+  .signup-divider .btn {
+    width: 77%;
+  }
+
+  .industries-container {
+    flex-direction: column;
+  }
+
+  .industry-card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .industry-card h3 {
+    font-size: 1em;
+  }
+
+  .industry-card p {
+    font-size: 0.75em;
+  }
+
+  .contact-info {
+    font-size: 0.85em;
+  }
+
+  .description-text {
+    font-size: 0.75em;
+  }
+
+  .section-title {
+    font-size: 1em;
+  }
+
+  .small-heading {
+    font-size: 0.7em;
+  }
+
+  .details-text {
+    font-size: 0.8em;
+  }
+
+  .details-image {
+    max-height: 20vh;
+  }
+
+  .details-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .details-section.layout-1 .details-content,
+  .details-section.layout-2 .details-content {
+    flex-direction: column;
+  }
+
+  .details-image, .details-text {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /*------------------------------------------*/
+  /*   Testimonial-Press Section
     /*------------------------------------------*/
-    .login .modal-dialog{
-        width: 80%;
-        margin: 90px auto;
-    }
+  .section-title {
+    font-size: 1.2em;
+  }
 
+  .testimonial {
+    padding: 0.8em;
+  }
+
+  .testimonial-content .quote {
+    font-size: 0.8em;
+  }
+
+  .rating {
+    font-size: 1em;
+  }
+
+  .testimonial-author img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .author-name {
+    font-size: 0.85em;
+  }
+
+  .author-title {
+    font-size: 0.8em;
+  }
+
+  /*------------------------------------------*/
+  /*   Newsletter
     /*------------------------------------------*/
-    /*   Showcase 
+  .newsletter .input-group {
+    width: 100%;
+  }
+
+  /*------------------------------------------*/
+  /*   Charts
     /*------------------------------------------*/
-    .showcase .video-player{
-        left: 50%;
-        top: 32%;
-        font-size: 45px;
-    }
+  .line-canvas {
+    width: 100%;
+  }
 
-    .showcase .img-box{
-        margin-top: 30px;
-    }
-
+  /*------------------------------------------*/
+  /*    Pricing
     /*------------------------------------------*/
-    /*    Sign-Up Divider
+  .pricing-tab {
+    max-width: 300px;
+  }
+
+  /*------------------------------------------*/
+  /*    Team
     /*------------------------------------------*/
-    .signup-divider .btn{
-        width: 77%;
-    }
+  .team .team-img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
-      .industries-container {
-        flex-direction: column;
-    }
+  .team h4 {
+    margin-bottom: 5px;
+  }
 
-    .industry-card {
-        max-width: 100%;
-        margin: 10px 0;
-    }
+  .team-img .img-icons span i {
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
+    padding: 5%;
+  }
 
-    .industry-card h3 {
-        font-size: 1em;
-    }
-
-    .industry-card p {
-        font-size: 0.75em;
-    }
-
-    .contact-info {
-        font-size: 0.85em;
-    }
-
-    .description-text {
-        font-size: 0.75em;
-    }
-
-    .section-title {
-        font-size: 1em;
-    }
-
-    .small-heading {
-        font-size: 0.7em;
-    }
-
-    .details-text {
-        font-size: 0.8em;
-    }
-
-    .details-image {
-        max-height: 20vh;
-    }
-
+  /*------------------------------------------*/
+  /*    Mobile-Download
     /*------------------------------------------*/
-    /*   Testimonial-Press Section
+  .mobile-download .shot-container {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .mobile-download .right-features {
+    display: block;
+  }
+
+  /*------------------------------------------*/
+  /*   Footer
     /*------------------------------------------*/
-    .section-title {
-        font-size: 1.2em;
-    }
+  .footer {
+    display: block;
+    padding: 0;
+  }
 
-    .testimonial {
-        padding: 0.8em;
-    }
-
-    .testimonial-content .quote {
-        font-size: 0.8em;
-    }
-
-    .rating {
-        font-size: 1em;
-    }
-
-    .testimonial-author img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .author-name {
-        font-size: 0.85em;
-    }
-
-    .author-title {
-        font-size: 0.8em;
-    }
-
+  /*------------------------------------------*/
+  /*    Fast-reg Fixes
     /*------------------------------------------*/
-    /*   Newsletter
-    /*------------------------------------------*/
-    .newsletter .input-group{
-        width: 100%;
-    }
+  .fast-reg .large {
+    display: none;
+  }
 
+  /*------------------------------------------*/
+  /*   Header Slider
     /*------------------------------------------*/
-    /*   Charts
-    /*------------------------------------------*/
-    .line-canvas{
-        width:100%;
-    }
+  .slider h1 {
+    font-size: 34px;
+    line-height: 48px;
+  }
 
+  /*------------------------------------------*/
+  /*   Header Dashboard
     /*------------------------------------------*/
-    /*    Pricing
-    /*------------------------------------------*/
-    .pricing-tab {
-        max-width: 300px;
-    }
+  .dashboard .hero-section {
+    padding-top: 30%;
+  }
 
-    /*------------------------------------------*/
-    /*    Team
-    /*------------------------------------------*/
-    .team .team-img{
-        width:100%;
-        margin-bottom: 10px;
-    }
-
-    .team h4{
-        margin-bottom: 5px;
-    }
-
-    .team-img .img-icons span i{
-        font-size: 60px;
-        width: 60px;
-        height: 60px;
-        padding: 5%;
-    }
-
-    /*------------------------------------------*/
-    /*    Mobile-Download
-    /*------------------------------------------*/
-    .mobile-download .shot-container{
-        display:block;
-        margin-top: 50px;
-    }
-
-    .mobile-download .right-features {
-        display:block;
-    }
-
-    /*------------------------------------------*/
-    /*   Footer
-    /*------------------------------------------*/
-    .footer {
-        display: block;
-        padding: 0;
-    }
-
-    /*------------------------------------------*/
-    /*    Fast-reg Fixes
-    /*------------------------------------------*/
-    .fast-reg .large{
-        display: none;
-    }
-
-    /*------------------------------------------*/
-    /*   Header Slider
-    /*------------------------------------------*/
-    .slider h1{
-        font-size: 34px;
-        line-height: 48px;
-    }
-
-    /*------------------------------------------*/
-    /*   Header Dashboard
-    /*------------------------------------------*/
-    .dashboard .hero-section{
-        padding-top: 30%;
-    }
-
-    .image-dashboard {
-        padding-top: 40px;
-    }
-
+  .image-dashboard {
+    padding-top: 40px;
+  }
 }

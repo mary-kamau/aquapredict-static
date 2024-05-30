@@ -11,7 +11,7 @@ $(window).load(function() {
     // will first fade out the loading animation
     $(".signal").fadeOut();
         // will fade out the whole DIV that covers the website.
-    $(".preloader").fadeOut("slow");
+    $(".preloader").fadeOut("fast");
 
 });
 
@@ -137,18 +137,18 @@ $(document).ready(function() {
 
 
 "use strict";
-$('.details-section').hide();
+  $('.details-section').hide();
 
-$('.card-link').click(function(event) {
+  $('.card-link').click(function(event) {
     event.preventDefault(); // Prevent default link behavior
 
     // Hide all detail sections
-    $('.details-section').slideUp();
+    $('.details-section').hide();
 
     // Show the target detail section
     const target = $(this).data('target');
     $(target).slideDown();
-});
+  });
 
 const $carousel = $('.carousel');
 const $items = $('.carousel-item');
