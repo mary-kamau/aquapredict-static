@@ -7,13 +7,13 @@
     <meta charset="utf-8">
 
     <!-- TITLE OF SITE -->
-    <title>AquaPredict</title>
+    <title>AquaPredict: The Future Of Swimming With Performance Prediction</title>
 
     <meta name="description"
-        content="Responsive Landing Page for Presenting Your Startup: Saas, Mobile or Web Application" />
+        content="Enhance Swimming Perfomance with AI Driven Insights And Tailored Training Plans" />
     <meta name="keywords"
-        content="smartmvp, startup theme, startup template, startup example, startup landing page, one page, responsive, app landing, html template, mobile application, responsive landing page" />
-    <meta name="author" content="ThemeDept">
+        content="swimming, prediction, aqua, athletes, pools, olympics, training, coach, aquatic, backstroke, freestyle, breaststroke, butterfly, open sea, ocean, ocean swimming, ironman" />
+    <meta name="author" content="AquaPredict">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- FAVICON  -->
