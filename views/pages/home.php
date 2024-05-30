@@ -1,5 +1,3 @@
-<?php
-?>
 <!doctype html>
 <html lang="en">
 
@@ -311,8 +309,8 @@
         ======================================================= -->
         <section class="it-solutions-section">
             <div class="section-header">
-                <span class="small-heading">services <span class="highlight">and features</span></span>
-                <h2 class="section-title">All AquaPredict <span class="highlight">Features</span> & Services</h2>
+                <!-- <span class="small-heading">services <span class="highlight">and features</span></span> -->
+                <h2 class="section-title">AquaPredict's <span class="highlight">Features</span> & Services</h2>
             </div>
             <div class="carousel-container">
                 <div class="carousel">
@@ -417,10 +415,12 @@
         <section id="details-2" class="details-section">
             <div class="details-content">
                 <div class="details-image">
-                    <img src="/assets/images/features/representation-user-experience-interface-design.jpg" alt="Details Image">
+                    <img src="/assets/images/features/representation-user-experience-interface-design.jpg"
+                        alt="Details Image">
                 </div>
                 <div class="details-text">
-                    <p class="description-text">ACCESS OUR PLATFORM ON THE GO WITH MOBILE OPTIMISATION, ENSURING YOU HAVE THE TOOLS YOU NEED, WHENEVER YOU NEED THEM.</p>
+                    <p class="description-text">ACCESS OUR PLATFORM ON THE GO WITH MOBILE OPTIMISATION, ENSURING YOU
+                        HAVE THE TOOLS YOU NEED, WHENEVER YOU NEED THEM.</p>
                 </div>
             </div>
         </section>
@@ -430,7 +430,8 @@
                     <img src="/assets/images/features/standard-quality-control-concept-m.jpg" alt="Details Image">
                 </div>
                 <div class="details-text">
-                    <p class="description-text">BENEFIT FROM UNPARALLELED SECURITY WITH OUR ADVANCED ENCRYPTION, AND DATA PROTECTION MEASURES, KEEPING YOUR INFORMATION SAFE AND SECURE.</p>
+                    <p class="description-text">BENEFIT FROM UNPARALLELED SECURITY WITH OUR ADVANCED ENCRYPTION, AND
+                        DATA PROTECTION MEASURES, KEEPING YOUR INFORMATION SAFE AND SECURE.</p>
                 </div>
             </div>
         </section>
@@ -447,10 +448,12 @@
         <section id="details-5" class="details-section">
             <div class="details-content">
                 <div class="details-image">
-                    <img src="/assets/images/features/cloud-computing-technology-scheme-with-long-shadows/42972.jpg" alt="Details Image">
+                    <img src="/assets/images/features/cloud-computing-technology-scheme-with-long-shadows/42972.jpg"
+                        alt="Details Image">
                 </div>
                 <div class="details-text">
-                    <p class="description-text">LEVERAGE THE POWER OF CLOUD COMPUTING WITH OUR CLOUD-BASED SOLUTIONS, OFFERING SCLABLITY AND FLEXIBILITY WITHOUT THE HEAVY INFRASTRUCTIRE COSTS.</p>
+                    <p class="description-text">LEVERAGE THE POWER OF CLOUD COMPUTING WITH OUR CLOUD-BASED SOLUTIONS,
+                        OFFERING SCLABLITY AND FLEXIBILITY WITHOUT THE HEAVY INFRASTRUCTIRE COSTS.</p>
                 </div>
             </div>
         </section>
@@ -460,7 +463,8 @@
                     <img src="/assets/images/features/pexels-emmanuel-jason-eliphalet-10054188.jpg" alt="Details Image">
                 </div>
                 <div class="details-text">
-                    <p class="description-text">STAY INFORMED WITH PERSONALISED NOTIFICATIONNS THAT KEEP YOU UPDATED ON IMPORTANT DEVELOPMENTS, TAILORED SPECIFICALLY TO YOUR INTERESTS,</p>
+                    <p class="description-text">STAY INFORMED WITH PERSONALISED NOTIFICATIONNS THAT KEEP YOU UPDATED ON
+                        IMPORTANT DEVELOPMENTS, TAILORED SPECIFICALLY TO YOUR INTERESTS,</p>
                 </div>
             </div>
         </section>
@@ -470,7 +474,8 @@
                     <img src="/assets/images/features/pexels-kindel-media-7688336.jpg" alt="Details Image">
                 </div>
                 <div class="details-text">
-                    <p class="description-text">ENHANCE TEAMWORK WITH OUR COLLABORATIVE TOOLS, ENSURING YOU HAVE THE TOOLS YOU NEED, WHENEVER YOU NEED THEM.</p>
+                    <p class="description-text">ENHANCE TEAMWORK WITH OUR COLLABORATIVE TOOLS, ENSURING YOU HAVE THE
+                        TOOLS YOU NEED, WHENEVER YOU NEED THEM.</p>
                 </div>
             </div>
         </section>
@@ -480,7 +485,8 @@
                     <img src="/assets/images/features/pexels-lukas-669612.jpg" alt="Details Image">
                 </div>
                 <div class="details-text">
-                    <p class="description-text">COMPILE COMPREHENSIVE REPORTS WITH EASE, OFFERING DETAILED INSIGHTS AND ANALYTICS TO GUIDE YOUR DECISION-MAKING PROCESS.</p>
+                    <p class="description-text">COMPILE COMPREHENSIVE REPORTS WITH EASE, OFFERING DETAILED INSIGHTS AND
+                        ANALYTICS TO GUIDE YOUR DECISION-MAKING PROCESS.</p>
                 </div>
             </div>
         </section>
@@ -490,7 +496,8 @@
                     <img src="/assets/images/features/pexels-tima-miroshnichenko-5453832.jpg" alt="Details Image">
                 </div>
                 <div class="details-text">
-                    <p class="description-text">RELY ON OUR 24/7 CUSTOMER SUPPORT FOR ASSISTANCE AT ANY HOUR, ENSURING YOU RECEIVE HELP WHENEVER YOU NEED IT.</p>
+                    <p class="description-text">RELY ON OUR 24/7 CUSTOMER SUPPORT FOR ASSISTANCE AT ANY HOUR, ENSURING
+                        YOU RECEIVE HELP WHENEVER YOU NEED IT.</p>
                 </div>
             </div>
         </section>
@@ -500,7 +507,8 @@
                     <img src="/assets/images/features/pexels-nastyasensei-335393.jpg" alt="Details Image">
                 </div>
                 <div class="details-text">
-                    <p class="description-text">BREAK DOWN LANGUAGE BARRIERS WITH MULTIKINGUAL SUPPORT, MAKING OUR PLATFORM ACCESSIBLE TO A DIVERSE USER BASE.</p>
+                    <p class="description-text">BREAK DOWN LANGUAGE BARRIERS WITH MULTIKINGUAL SUPPORT, MAKING OUR
+                        PLATFORM ACCESSIBLE TO A DIVERSE USER BASE.</p>
                 </div>
             </div>
         </section>
@@ -549,7 +557,7 @@
                             <ul class="pricing-features">
                                 <li>Advanced Performance Analysis</li>
                                 <li>Enhanced AI analytics.</li>
-                                <li>Deeper insights into performance trends,technique, and endurance.</li>
+                                <li>Deeper insights into performance trends, technique, and endurance.</li>
                             </ul>
                             <a href="https://buy.stripe.com/test_4gw01I40x4ZP5GM145" class="btn btn-color">Subscribe</a>
                         </div>
@@ -567,26 +575,11 @@
                             <a href="https://buy.stripe.com/test_3csdSybsZ77X6KQ4gi" class="btn btn-color">Subscribe</a>
                         </div>
                     </div>
-
-
-                    <!-- Pricing Footer -->
-                    <!-- <div class="row">
-                    <div class="col-xs-12">
-                        <div class="pricing-more">
-                            <p><strong>Looking for more?</strong> &mdash; Tell us what you need. Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Deserunt nesciunt sed molestiae
-                                quos, dolor eaque quis facilis tempora consequuntur doloribus omnis cumque
-                                fugiat. Qui rerum quis mollitia incidunt reprehenderit expedita, non cumque
-                                tenetur deleniti! <strong> <a href="mailto:support@themedept.com">Contact us <i
-                                            class="icon arrow_carrot-right_alt2"></i></a></strong> </p>
-                        </div>
-                    </div>
-                </div> -->
-
                 </div><!-- /End Row Pricing Tab -->
             </div><!-- /End Wrapper -->
         </div><!-- /End Container -->
     </section>
+
     <!-- =============================
              /END PRICING SECTION 
         ============================== -->

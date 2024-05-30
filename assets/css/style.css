@@ -1017,7 +1017,7 @@ p {
     /*------------------------------------------*/
 .section-title {
   text-align: center;
-  font-size: 2em;
+  font-size: 10em;
   margin-bottom: 1em;
 }
 
@@ -1027,7 +1027,7 @@ p {
 
 .testimonial-section {
   padding: 20px;
-  background-color: #f9f9f9;
+  margin-top: 100px;
 }
 
 .testimonials-container {
@@ -1036,7 +1036,8 @@ p {
   gap: 2em;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1em;
+  /* padding: 0 1em;
+  margin-top:100px; */
 }
 
 .testimonial {
@@ -1125,6 +1126,11 @@ p {
   background-image: url('../images/features/usrr_interact_images_init.png');
   color: #fff;
   text-align: center;
+}
+
+.it-solutions-section .section-title {
+  color: #fff;
+  font-weight: 1000;
 }
 
 .section-header {
@@ -1600,14 +1606,26 @@ p {
 /* ==========================================================================
    11. PRICING TABS
 ========================================================================== */
+/* Container styling for Flexbox */
+.grid-md {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Ensure all pricing tabs have the same height */
 .pricing-tab {
   padding: 50px 30px 30px;
   border-radius: 7px;
   color: #333333;
   text-align: center;
   position: relative;
+  flex: 1 1 30%; /* Allow each tab to grow and shrink equally */
+  display: flex;
+  flex-direction: column; /* Ensures content stacks vertically */
+  justify-content: space-between; /* Distributes space evenly */
 }
 
+/* Additional styling for pricing elements */
 .pricing-tab p.price {
   font-size: 56px;
   letter-spacing: -2px;
@@ -1703,6 +1721,7 @@ p {
 .pricing-more i {
   vertical-align: baseline;
 }
+
 
 /* ==========================================================================
    12. TEAM SECTION

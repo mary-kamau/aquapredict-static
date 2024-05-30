@@ -31,7 +31,7 @@
 
   .testimonial-section {
     padding: 20px;
-    background-color: #f9f9f9;
+    margin-bottom: 100px;
   }
 
   .testimonials-container {
@@ -203,8 +203,7 @@
   }
 
   .testimonial-section {
-    padding: 20px;
-    background-color: #f9f9f9;
+    padding: 50px;
   }
 
   .testimonials-container {
