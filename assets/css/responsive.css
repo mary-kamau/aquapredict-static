@@ -170,7 +170,17 @@
   }
 
   .description-text {
-    font-size: 1.1em;
+    font-size: 2em;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 800;
+    position: absolute;
+    left: 20px;
+    top: 35%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .description-text {
   }
 
   .details-content {
@@ -183,10 +193,28 @@
     flex-direction: column;
   }
 
-  .details-image, .details-text {
+  .details-image,
+  .details-text {
     flex: none;
     width: 100%;
     padding: 10px;
+  }
+
+  /* .pricing-tab {
+    min-height: auto;
+    flex: 1 1 45%;
+  } */
+
+  .pricing-tab {
+    padding: 50px 30px 30px;
+    border-radius: 7px;
+    color: #333333;
+    text-align: center;
+    position: relative;
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   /*------------------------------------------*/
@@ -340,6 +368,17 @@
   .details-content {
     flex-direction: row;
     text-align: left;
+  }
+
+  .description-text {
+    font-size: 2em;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 800;
+    position: absolute;
+    left: 20px;
+    top: 35%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   .details-section.layout-1 .details-content {
@@ -521,10 +560,33 @@
     flex-direction: column;
   }
 
-  .details-image, .details-text {
+  .details-image,
+  .details-text {
     flex: none;
     width: 100%;
     padding: 10px;
+  }
+
+  .description-text {
+    font-size: 2em;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 800;
+    position: absolute;
+    left: 20px;
+    top: 35%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  /*------------------------------------------*/
+  /*    Pricing
+    /*------------------------------------------*/
+  .pricing-tab {
+    padding: 50px 27px 30px;
+  }
+
+  .pricing-tab h4 {
+    margin: 0 0 30px;
   }
 
   /*------------------------------------------*/
@@ -647,13 +709,13 @@
   /*------------------------------------------*/
   /*    Pricing
     /*------------------------------------------*/
-  .pricing-tab {
+  /* .pricing-tab {
     padding: 50px 27px 30px;
-  }
+  } */
 
-  .pricing-tab h4 {
+  /* .pricing-tab h4 {
     margin: 0 0 30px;
-  }
+  } */
 
   /*------------------------------------------*/
   /*    Team
@@ -825,12 +887,24 @@
     text-align: center;
   }
 
+  .description-text {
+    font-size: 2em;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 800;
+    position: absolute;
+    left: 20px;
+    top: 35%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
   .details-section.layout-1 .details-content,
   .details-section.layout-2 .details-content {
     flex-direction: column;
   }
 
-  .details-image, .details-text {
+  .details-image,
+  .details-text {
     flex: none;
     width: 100%;
     padding: 10px;
@@ -855,17 +929,25 @@
     display: none;
   }
 
-  /*------------------------------------------*/
-  /*    Pricing
-    /*------------------------------------------*/
   .pricing-tab {
-    max-width: 400px;
-    margin: 0 auto;
-    margin-top: 30px;
+    flex: 1 1 100%;
   }
 
-  .pricing .large {
-    margin-bottom: 0;
+  .pricing-tab p.price {
+    font-size: 36px;
+  }
+
+  .pricing-tab p.price span {
+    font-size: 18px;
+  }
+
+  .pricing-tab h4 {
+    margin: 0 20px 20px;
+    padding-bottom: 5px;
+  }
+
+  .pricing-features li {
+    font-size: 14px;
   }
 
   /*------------------------------------------*/
@@ -1031,7 +1113,7 @@
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
-@media (max-width: 599px) {
+@media (max-width: 599px) { 
   /*------------------------------------------*/
   /*   Typography
     /*------------------------------------------*/
@@ -1136,10 +1218,34 @@
     flex-direction: column;
   }
 
-  .details-image, .details-text {
+  .details-image,
+  .details-text {
     flex: none;
     width: 100%;
     padding: 10px;
+  }
+
+  .description-text {
+    font-size: 2em;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 800;
+    position: absolute;
+    left: 20px;
+    top: 35%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .pricing .row {
+    justify-content: center;
+  }
+
+  .pricing .col-sm-4 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+
+  .pricing-tab {
+    flex: 1 1 100%;
   }
 
   /*------------------------------------------*/
@@ -1341,6 +1447,17 @@
     font-size: 0.75em;
   }
 
+  .description-text {
+    font-size: 2em;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 800;
+    position: absolute;
+    left: 20px;
+    top: 35%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
   .section-title {
     font-size: 1em;
   }
@@ -1367,10 +1484,16 @@
     flex-direction: column;
   }
 
-  .details-image, .details-text {
+  .details-image,
+  .details-text {
     flex: none;
     width: 100%;
     padding: 10px;
+  }
+
+  .pricing-tab {
+    max-width: 300px;
+    margin-bottom: 10px;
   }
 
   /*------------------------------------------*/
@@ -1423,9 +1546,8 @@
   /*    Pricing
     /*------------------------------------------*/
   .pricing-tab {
-    max-width: 300px;
+    flex: 1 1 100%;
   }
-
   /*------------------------------------------*/
   /*    Team
     /*------------------------------------------*/

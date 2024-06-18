@@ -82,6 +82,17 @@ $(window).scroll(function(){
     }
 });
 
+$('.scrollto').on('click', function(event) {
+    event.preventDefault();
+
+    var targetId = $(this).attr('href');
+    var targetElement = $(targetId);
+
+    $('html, body').animate({
+        scrollTop: targetElement.offset().top
+    }, 800); // Adjust the duration (800ms) as needed
+});
+
 
 /* =================================
    TYPING EFFECT
@@ -150,38 +161,6 @@ $(document).ready(function() {
     $(target).slideDown();
   });
 
-const $carousel = $('.carousel');
-const $items = $('.carousel-item');
-let currentIndex = 0;
-
-function getVisibleItemsCount() {
-    const width = $(window).width();
-    if (width <= 599) return 1;
-    if (width <= 767) return 2;
-    if (width <= 991) return 3;
-    if (width <= 1199) return 4;
-    return 5;
-}
-
-function updateCarousel() {
-    const visibleItems = getVisibleItemsCount();
-    const totalItems = Math.ceil($items.length / visibleItems);
-    const offset = -currentIndex * 100;
-    $carousel.css('transform', `translateX(${offset}%)`);
-}
-
-function showNextItem() {
-    const visibleItems = getVisibleItemsCount();
-    const totalSets = Math.ceil($items.length / visibleItems);
-    currentIndex = (currentIndex + 1) % totalSets;
-    updateCarousel();
-}
-
-$(window).resize(updateCarousel);
-
-setInterval(showNextItem, 3000); // Change slide every 3 seconds
-
-updateCarousel();
 
 
 
@@ -209,9 +188,9 @@ new WOW().init();
 /* =================================
     VIDEO BACKGROUND            
 =================================== */
-$("#top").vide("assets/images/video/ocean", {
-    posterType: "jpg"
-});
+// $("#top").vide("assets/images/video/ocean", {
+//     posterType: "jpg"
+// });
 
 
 /* =================================

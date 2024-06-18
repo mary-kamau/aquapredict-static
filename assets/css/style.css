@@ -555,11 +555,6 @@ p {
 /*   Header Background Parallax Settings
 /*------------------------------------------*/
 .header {
-  background: url("../images/hero-images/hero-placeholder-underwater.jpg")
-    no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
 }
 
 .header .overlay {
@@ -1067,10 +1062,13 @@ p {
 }
 
 .testimonial-author img {
-  width: 60px;
-  height: 60px;
+  /* width: 60px;
+  height: 60px; */
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 50%;
   margin-bottom: 0.5em;
+  object-fit: cover;
 }
 
 .author-info {
@@ -1152,7 +1150,7 @@ p {
   margin: 0;
 }
 
-.carousel-container {
+/* .carousel-container {
   overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
@@ -1171,6 +1169,20 @@ p {
   flex-direction: column;
   box-sizing: border-box;
   padding: 10px;
+} */
+
+.carousel-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.carousel-item {
+  display: inline-block;
+  margin-right: 10px;
+  width: calc(20% - 10px);
+  min-width: 200px;
+  vertical-align: top;
 }
 
 .it-solution-card {
@@ -1230,7 +1242,8 @@ p {
   align-items: center;
   padding: 20px;
   text-align: center;
-  background-color: #000;
+  background-size: cover;
+  background-position: center;
 }
 
 .details-content {
@@ -1244,7 +1257,7 @@ p {
 
 .details-text {
   flex: 1;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .details-image {
@@ -1263,14 +1276,19 @@ p {
   max-height: 100%;
   width: auto;
   height: auto;
-  object-fit: contain;
+  object-fit:fill;
   border-radius: 10px;
 }
 
 .description-text {
-  color: white;
-  font-size: 1.2em;
-  line-height: 1.5;
+  font-size: 4em;
+  line-height:1em;;
+  color: #fff;
+  font-weight: 800;
+  position: absolute;
+  left: 20px;
+  top:35%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Layout 1: Image on the right, text on the left */
@@ -1607,9 +1625,11 @@ p {
    11. PRICING TABS
 ========================================================================== */
 /* Container styling for Flexbox */
+/* General styles */
 .grid-md {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Ensure all pricing tabs have the same height */
@@ -1619,13 +1639,13 @@ p {
   color: #333333;
   text-align: center;
   position: relative;
-  flex: 1 1 30%; /* Allow each tab to grow and shrink equally */
+  flex: 1 1 30%;
   display: flex;
-  flex-direction: column; /* Ensures content stacks vertically */
-  justify-content: space-between; /* Distributes space evenly */
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Additional styling for pricing elements */
 .pricing-tab p.price {
   font-size: 56px;
   letter-spacing: -2px;
@@ -1669,10 +1689,6 @@ p {
   width: 158px;
   padding: 10px 10px;
   color: #fff;
-  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
-  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
-  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
-  -o-transform: rotate(45deg) translate3d(0, 0, 0);
   transform: rotate(45deg) translate3d(0, 0, 0);
 }
 
@@ -1720,6 +1736,40 @@ p {
 
 .pricing-more i {
   vertical-align: baseline;
+}
+
+
+/* ==========================================================================
+   12. PRIVACY SECTION
+========================================================================== */
+
+/* Header styling */
+.privacy-header {
+  /* background-color: #0073e6; */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.privacy-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+
+.privacy-content{
+  padding: 20px 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.privacy-content p {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.8;
+  margin: 0 0 20px;
 }
 
 
@@ -1886,6 +1936,47 @@ p {
 
 .mobile-download .description {
   margin-bottom: 35px;
+}
+
+/**/
+
+.acceptable-use-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+  max-height: 60vh;
+  max-width: 100%;
+}
+
+.acceptable-use-image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.acceptable-use-notice-header{
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+ul {
+  list-style-type: disc; /* Change to square, circle, or custom image if desired */
+  padding-left: 20px;
+}
+
+ul ul {
+  list-style-type: circle; /* Nested list style */
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 /* ==========================================================================
