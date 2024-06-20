@@ -1639,12 +1639,13 @@ p {
   color: #333333;
   text-align: center;
   position: relative;
-  flex: 1 1 30%;
+  margin: 10px;
+  /* flex: 1 1 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 .pricing-tab p.price {
   font-size: 56px;

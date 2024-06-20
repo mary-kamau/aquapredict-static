@@ -200,22 +200,6 @@
     padding: 10px;
   }
 
-  /* .pricing-tab {
-    min-height: auto;
-    flex: 1 1 45%;
-  } */
-
-  .pricing-tab {
-    padding: 50px 30px 30px;
-    border-radius: 7px;
-    color: #333333;
-    text-align: center;
-    position: relative;
-    flex: 1 1 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
 
   /*------------------------------------------*/
   /*   Testimonial
