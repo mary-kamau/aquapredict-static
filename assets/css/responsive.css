@@ -88,6 +88,28 @@
     color: #00bcd4;
   }
 
+  /* ==========================================================================
+   11. PRICING TABS
+========================================================================== */
+.grid-md {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricing-tab {
+  padding: 50px 30px 30px;
+  border-radius: 7px;
+  color: #333333;
+  text-align: center;
+  position: relative;
+  margin: 10px;
+  flex: 1 1 300px;
+  max-width: 350px;
+  box-sizing: border-box;
+}
+
+
   /*------------------------------------------*/
   /*   Footer
     /*------------------------------------------*/
@@ -200,6 +222,14 @@
     padding: 10px;
   }
 
+  .grid-md {
+    flex-direction: row;
+  }
+
+  .pricing-tab {
+    max-width: 100%;
+    margin: 20px 0;
+  }
 
   /*------------------------------------------*/
   /*   Testimonial
@@ -371,6 +401,13 @@
 
   .details-section.layout-2 .details-content {
     flex-direction: row-reverse;
+  }
+
+  .pricing-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
   }
 
   /*------------------------------------------*/
@@ -914,24 +951,15 @@
   }
 
   .pricing-tab {
-    flex: 1 1 100%;
-  }
-
-  .pricing-tab p.price {
-    font-size: 36px;
-  }
-
-  .pricing-tab p.price span {
-    font-size: 18px;
-  }
-
-  .pricing-tab h4 {
-    margin: 0 20px 20px;
-    padding-bottom: 5px;
-  }
-
-  .pricing-features li {
-    font-size: 14px;
+    padding: 50px 30px 30px;
+    border-radius: 7px;
+    color: #333333;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    box-sizing: border-box;
   }
 
   /*------------------------------------------*/
@@ -1097,7 +1125,7 @@
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
-@media (max-width: 599px) { 
+@media (max-width: 599px) {
   /*------------------------------------------*/
   /*   Typography
     /*------------------------------------------*/
@@ -1219,7 +1247,10 @@
     top: 35%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-  .pricing .row {
+
+  .pricing .col-sm-4 {
+  }
+  /* .pricing .row {
     justify-content: center;
   }
 
@@ -1227,10 +1258,11 @@
     flex: 0 0 80%;
     max-width: 80%;
   }
-
+  
   .pricing-tab {
-    flex: 1 1 100%;
-  }
+    max-width: 300px;
+    margin-bottom: 10px;
+  } */
 
   /*------------------------------------------*/
   /*   Testimonial-Press Section
